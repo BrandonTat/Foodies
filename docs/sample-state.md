@@ -25,5 +25,14 @@
       }
     }
   }
+
+  reviews: {
+    1: {
+      rating: 5,
+      review: "Great happy hour!",
+      reviewer_id: 1,
+      business_id: 1
+    }
+  }
 }
 ```
