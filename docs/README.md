@@ -1,9 +1,8 @@
 # Foodies
-[Heroku link][heroku]
+[Heroku link]
 
 [Trello link][trello]
 
-[heroku]:
 [trello]: https://trello.com/b/hPfeFHWL/foodies
 
 ## Minimum Viable Product
