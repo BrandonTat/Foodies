@@ -30,8 +30,14 @@ adequate seed data and sufficient CSS styling:
     * On business show page, display close-up map of business location.
 
 ## Design Docs
-* [Wireframes]: ./wireframes
-* [React Components]: ./component-hierarchy.md
-* [API Endpoints]: ./api-endpoints.md
-* [DB schema]: ./schema.md
-* [Sample State]: ./sample-state.md
+* [View Wireframes][wireframes]
+* [React Components][components]
+* [API endpoints][api-endpoints]
+* [DB schema][schema]
+* [Sample State][sample-state]
+
+[wireframes]: /docs/wireframes
+[components]: /docs/component-hierarchy.md
+[sample-state]: /docs/sample-state.md
+[api-endpoints]: /docs/api-endpoints.md
+[schema]: /docs/schema.md
