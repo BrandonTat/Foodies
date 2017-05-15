@@ -27,7 +27,7 @@ column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
 business_id | integer   | not null, foreign key (references businesses), indexed
-reviewer_id | integer   | not null, foreign key (references users), indexed
+user_id     | integer   | not null, foreign key (references users), indexed
 review_text | text      | not null
 review_photo| string    |
 rating      | integer   | not null, inclusive [1, 2, 3, 4, 5]
