@@ -3,11 +3,14 @@
 
 [Trello link][trello]
 
+[heroku]:
+[trello]: https://trello.com/b/hPfeFHWL/foodies
+
 ## Minimum Viable Product
 
-[Name] is a web application inspired by Yelp to ... [Name] is built
-using Ruby  on Rails and React/Redux. By the end of Week 9, this app will,
-at a minimum, satisfy the following criteria with smooth, bug-free navigation,
+Foodies is a web application inspired by Yelp built using Ruby on Rails
+and React/Redux. By the end of Week 9, this app will, at a minimum,
+satisfy the following criteria with smooth, bug-free navigation,
 adequate seed data and sufficient CSS styling:
 
 ### Features and Implementation
@@ -41,3 +44,33 @@ adequate seed data and sufficient CSS styling:
 [sample-state]: /docs/sample-state.md
 [api-endpoints]: /docs/api-endpoints.md
 [schema]: /docs/schema.md
+
+## Implementation Timeline
+
+### Phase 1: Backend setup and Front End User Authentication (2 days)
+
+**Objective:** Functioning rails project with front-end Authentication
+
+### Phase 2: Models and Seed Data (.5 days)
+
+**Objective:** To build complete business, review, photo, controllers,
+and views (JBuilder). Additionally create 10-15 restaurants and 6-7 users
+
+### Phase 3: Home Page (1.5 days)
+
+**Objective:** Setup functioning home page with links to sign in/sign up
+
+### Phase 4: Business Search (3 days)
+
+**Objective:** Allow user to search for businesses with location, price,
+and/or type, to setup a working search results page with links to filtered
+businesses, and to have locations on a map highlighted.
+
+### Business Detail (1.5 days)
+
+**Objective:** Setup a page where business information is displayed. Page
+will show price range, reviews, location on map, and possibly photos.
+
+### Phase 6 (1.5 days)
+
+**Objective:** Allow user to submit reviews and look at other reviews
