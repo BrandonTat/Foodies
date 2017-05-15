@@ -1,4 +1,4 @@
-# Yelp Clone
+# Foodies
 [Heroku link][heroku]
 
 [Trello link][trello]
@@ -30,8 +30,8 @@ adequate seed data and sufficient CSS styling:
     * On business show page, display close-up map of business location.
 
 ## Design Docs
-* [Wireframes]
-* [React Components]
-* [API Endpoints]
-* [DB schema]
-* [Sample State]
+* [Wireframes]: ./wireframes
+* [React Components]: ./component-hierarchy.md
+* [API Endpoints]: ./api-endpoints.md
+* [DB schema]: ./schema.md
+* [Sample State]: ./sample-state.md
