@@ -1,7 +1,7 @@
 # Yelp Clone
 [Heroku link][heroku]
 
-[Trellow link][trello]
+[Trello link][trello]
 
 ## Minimum Viable Product
 
@@ -30,8 +30,12 @@ adequate seed data and sufficient CSS styling:
     * On business show page, display close-up map of business location.
 
 ## Design Docs
-* [Wireframes]: docs/wireframes
+* [Wireframes] (docs/wireframes)
 * [React Components]
 * [API Endpoints]
 * [DB schema]
 * [Sample State]
+
+## Implementation Timeline
+
+### Phase 1: Backend setup and Front End User Authentication (2 days)
