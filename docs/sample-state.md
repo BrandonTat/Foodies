@@ -21,6 +21,8 @@
       photos: {
         1: {
           image_url: "Link to photo"
+          description: "Cool place!"
+          tag: "Inside"
         }
       }
     }
