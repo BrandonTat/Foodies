@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 class SessionForm extends React.Component {
   constructor(props) {
@@ -37,9 +37,32 @@ class SessionForm extends React.Component {
       <div id="session-form">
         {header}
         <form onSubmit={this.handleSubmit}>
+          <div id="login-form">
+            <br/>
 
+          <label>Username:
+              <input type="text"
+                value={this.state.username}
+                onChange={this.update('username')}
+              />
+            </label>
+
+            <br/>
+
+            <label>Password:
+              <input type="password"
+                value={this.state.password}
+                onChange={this.update('password')}
+              />
+            </label>
+
+            <br/>
+            <input type="submit" value="Submit" />
+          </div>
         </form>
       </div>
     );
   }
 }
+
+export default withRouter(SessionForm);
