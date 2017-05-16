@@ -16,21 +16,6 @@
   - BusinessIndexItem
   - BusinessDetailContainer
 
-**UserContainer**
-  - UserDetail
-    * FeaturedBusiness
-  - UserBookmarksContainer
-  - UserReviewsContainer
-
-**UserBookmarksContainer**
-  - UserBookmarksContainer
-    * UserBookmarkItem
-
-**UserReviewsContainer**
-  - UserReviews
-    * UserReviewItem
-
-
 ## Routes
 |Path   | Component   |
 |-------|-------------|
