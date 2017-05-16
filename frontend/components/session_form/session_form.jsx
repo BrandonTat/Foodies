@@ -12,17 +12,23 @@ class SessionForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  update(field) {
+    return e => this.setState({
+      [field]: e.currentTarget.value
+    });
+  }
+
   handleSubmit(e) {
     e.preventDefault();
     const user = this.state;
-    this.props.processForm({user});
+    this.props.processForm(user);
   }
 
   navLink() {
     if (this.props.formType === 'login') {
       return <Link to='/signup'>{"Become a Foodie"}</Link>
     } else {
-      return <Link to='/login'>{"Already a Foodie? Login"}</Link>
+      return <Link to='/login'>{"Already a Foodie?"}</Link>
     }
   }
 
@@ -39,7 +45,8 @@ class SessionForm extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <div id="login-form">
             <br/>
-
+            Please {this.props.formType} or {this.navLink()}
+            <br/>
           <label>Username:
               <input type="text"
                 value={this.state.username}
