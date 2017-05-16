@@ -12,6 +12,7 @@
 
 - `POST /api/users`
 
+**BONUS**
 - `GET /api/users/:id`
   - User show page
 
@@ -33,9 +34,6 @@
 
 ### Reviews
 
-- `GET /api/businesses/:businessId/reviews`
-  - Business reviews index
-
 - `POST /api/businesses/:businessId/reviews`
   - Creates review for business
 
@@ -45,9 +43,6 @@
 - `DELETE /api/reviews/:id`
   - Delete business review
 
+**BONUS**
 - `GET /api/users/:userId/reviews`
   - User reviews index
-
-### Bookmarks
-- `GET /api/users/:userId/bookmarks`
- - User bookmarks index
