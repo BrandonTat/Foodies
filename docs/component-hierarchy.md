@@ -38,8 +38,5 @@
 | "/signup" | "AuthFormContainer" |
 | "/signin" | "AuthFormContainer" |
 | "/home" | "HomeContainer" |
-| "/home/business" | "BusinessIndexContainer" |
-| "home/business/:businessId" | "BusinessDetailContainer"
-| "home/user/:userId" | UserContainer |
-| "home/user/:userId/bookmarks" | UserBookmarksContainer |
-| "home/user/:userId/reviews" | UserReviewsContainer |
+| "/search |  "BusinessIndexContainer |
+| "/business/:businessId" | "BusinessDetailContainer" |
