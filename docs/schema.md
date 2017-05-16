@@ -21,6 +21,7 @@ price          | integer   | not null, inclusive [1, 2, 3, 4]
 image_url      | string    | not null
 lat            | float     | not null
 lng            | float     | not null
+category       | string    | not null, inclusive [ list of categories]
 
 ## Rating & Reviews
 column name | data type | details
