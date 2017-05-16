@@ -21,7 +21,7 @@ price          | integer   | not null, inclusive [1, 2, 3, 4]
 image_url      | string    | not null
 lat            | float     | not null
 lng            | float     | not null
-category       | string    | not null, inclusive [ list of categories]
+category_id    | int       | not null, foreign key (references categories), indexed
 
 ## Rating & Reviews
 column name | data type | details
@@ -33,3 +33,9 @@ review_text | text      | not null
 rating      | integer   | not null, inclusive [1, 2, 3, 4, 5]
 price       | integer   | not null, inclusive [1, 2, 3, 4]
 photo_url   | string    |  
+
+## categories
+column name | data type | details
+------------|-----------|-----------------------
+id          | integer   | not null, primary key
+type        | string    | not null, inclusive [list of categories]
