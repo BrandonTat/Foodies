@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Redirect, withRouter } from 'react-router-dom';
+import ErrorsContainer from '../errors/errors_container';
 
 class SessionForm extends React.Component {
   constructor(props) {
