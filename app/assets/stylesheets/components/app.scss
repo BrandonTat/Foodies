@@ -4,6 +4,11 @@ html {
   -moz-background-size: cover;
   background-size: cover;
 }
+#welcome {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 40px;
+}
 
 #main {
   position: fixed;
@@ -15,5 +20,58 @@ html {
   z-index: -100;
   background-image: url("https://images.pexels.com/photos/9708/food-pizza-restaurant-eating.jpg?w=1260&h=750&auto=compress&cs=tinysrgb");
   background-size: cover;
-  transition: 1s opacity;
+}
+
+#session-form {
+  display: flex;
+  max-width: 20%;
+  margin-left: 35%;
+  border-radius: 5%;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#session-form h1 {
+  font-size: 30px;
+  margin: 5px 0 10px 0;
+}
+
+#login-form input {
+  margin: 15px 0;
+  border-bottom: 1.5px solid white;
+  font-size: 20px;
+  height: 30px;
+}
+
+#login-form button {
+  font-size: 20px;
+}
+
+#login-form button:hover {
+  color: rgb(3,101,100);
+}
+
+#login-form label {
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+}
+
+#login-form a {
+  font-size: 20px;
+}
+
+#login-form a:hover {
+  color: rgb(3,101,100);
 }

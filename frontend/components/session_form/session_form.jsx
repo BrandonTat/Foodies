@@ -46,34 +46,34 @@ class SessionForm extends React.Component {
   render() {
     let header;
     if (this.props.formType === 'login'){
-      header = <h1>Log In</h1>;
+      header = "Log In";
     } else {
-      header = <h1>Become a Foodie</h1>;
+      header = "Become a Foodie";
     }
     return(
       <div id="session-form">
-        {header}
+        <h1>{header}</h1>
         <form onSubmit={this.handleSubmit}>
           <div id="login-form">
             <br/>
-          <label>Username:
-              <input type="text"
+            <label>Username</label>
+
+            <input type="text"
                 value={this.state.username}
                 onChange={this.update('username')}
-              />
-            </label>
+            />
 
             <br/>
 
-            <label>Password:
-              <input type="password"
-                value={this.state.password}
-                onChange={this.update('password')}
-              />
-            </label>
+            <label>Password</label>
+
+            <input type="password"
+              value={this.state.password}
+              onChange={this.update('password')}
+            />
 
             <br/>
-            <input type="submit" value="Submit" />
+            <button type="submit">Submit</button>
             <br />
 
             {this.navLink()}
@@ -89,4 +89,4 @@ class SessionForm extends React.Component {
 
 export default withRouter(SessionForm);
 
-// <button onClick={this.guestLogIn()}>Guest Log In</button>
+// <input type="submit" value="Submit" />
