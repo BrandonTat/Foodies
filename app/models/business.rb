@@ -20,5 +20,9 @@
 class Business < ApplicationRecord
   validates :name, :address, :city, :state, :zip, :price, :image_url,
             :lat, :lng, :category_id, presence: true
+  validates :name, uniqueness: true
   validates :price, inclusion: { in: [1, 2, 3, 4] }
+
+  # category table not written yet
+  # belongs_to: category
 end
