@@ -1,7 +1,11 @@
 import React from 'react';
 
-const Errors = ({errors}) => (
-  errors.map(error => <li>error</li>)
-);
+const Errors = ({errors}) => {
+  return (
+    <ul>
+      {errors.map((error, idx) => <li key={idx}>{error}</li>)}
+    </ul>
+  );
+};
 
 export default Errors;

@@ -14,6 +14,10 @@ class SessionForm extends React.Component {
     this.guestLogIn = this.guestLogIn.bind(this);
   }
 
+  componentWillUpdate() {
+    this.props.clearErrors();
+  }
+
   update(field) {
     return e => this.setState({
       [field]: e.currentTarget.value
@@ -54,17 +58,16 @@ class SessionForm extends React.Component {
     return(
       <div id="session-form">
         <h1>{header}</h1>
+
+        <div id="errors">{<ErrorsContainer />}</div>
         <form onSubmit={this.handleSubmit}>
           <div id="login-form">
-            <br/>
             <label>Username</label>
 
             <input type="text"
                 value={this.state.username}
                 onChange={this.update('username')}
             />
-
-            <br/>
 
             <label>Password</label>
 
@@ -73,12 +76,9 @@ class SessionForm extends React.Component {
               onChange={this.update('password')}
             />
 
-            <br/>
             <button type="submit">Submit</button>
-            <br />
 
             {this.navLink()}
-            <br />
 
             <button onClick={this.guestLogIn}>Guest Log In</button>
           </div>
@@ -89,5 +89,3 @@ class SessionForm extends React.Component {
 }
 
 export default withRouter(SessionForm);
-
-// <input type="submit" value="Submit" />
