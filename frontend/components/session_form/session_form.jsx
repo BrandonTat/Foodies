@@ -76,11 +76,11 @@ class SessionForm extends React.Component {
               onChange={this.update('password')}
             />
 
-            <button type="submit">Submit</button>
-
-            {this.navLink()}
-
-            <button onClick={this.guestLogIn}>Guest Log In</button>
+            <div id="buttons">
+              <button type="submit">Submit</button>
+              {this.navLink()}
+              <button onClick={this.guestLogIn}>Guest Log In</button>
+            </div>
           </div>
         </form>
       </div>
