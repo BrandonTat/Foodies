@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { Link, Redirect, withRouter } from 'react-router-dom';
 
 class SessionForm extends React.Component {
   constructor(props) {
@@ -10,6 +10,7 @@ class SessionForm extends React.Component {
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.guestLogIn = this.guestLogIn.bind(this);
   }
 
   update(field) {
@@ -21,7 +22,11 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = this.state;
-    this.props.processForm(user);
+    if (this.props.formType === "login") {
+      this.props.login(user);
+    } else {
+      this.props.signup(user);
+    }
   }
 
   navLink() {
@@ -32,20 +37,24 @@ class SessionForm extends React.Component {
     }
   }
 
+  guestLogIn(e) {
+    e.preventDefault();
+    let user = { username:"guest", password:"password" };
+    this.props.login(user);
+  }
+
   render() {
     let header;
     if (this.props.formType === 'login'){
-      header = <h1>Log In</h1>
+      header = <h1>Log In</h1>;
     } else {
-      header = <h1>Become a Foodie</h1>
+      header = <h1>Become a Foodie</h1>;
     }
     return(
       <div id="session-form">
         {header}
         <form onSubmit={this.handleSubmit}>
           <div id="login-form">
-            <br/>
-            Please {this.props.formType} or {this.navLink()}
             <br/>
           <label>Username:
               <input type="text"
@@ -65,6 +74,12 @@ class SessionForm extends React.Component {
 
             <br/>
             <input type="submit" value="Submit" />
+            <br />
+
+            {this.navLink()}
+            <br />
+
+            <button onClick={this.guestLogIn}>Guest Log In</button>
           </div>
         </form>
       </div>
@@ -73,3 +88,5 @@ class SessionForm extends React.Component {
 }
 
 export default withRouter(SessionForm);
+
+// <button onClick={this.guestLogIn()}>Guest Log In</button>
