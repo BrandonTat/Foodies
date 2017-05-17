@@ -9,7 +9,7 @@ import HomeContainer from './home/home_container';
 import { AuthRoute } from '../util/route_util';
 
 const App = () => (
-  <div>
+  <div id="main">
     <h1>Welcome to Foodies</h1>
     <Switch>
 
