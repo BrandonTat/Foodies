@@ -56,33 +56,40 @@ class SessionForm extends React.Component {
       header = "Become a Foodie";
     }
     return(
-      <div id="session-form">
-        <h1>{header}</h1>
+      <div>
+        <div id="welcomeHeader">
+          <h1 id="header">Foodies</h1>
+          <h2 id="description"> - Food Search Engine</h2>
+        </div>
 
-        <div id="errors">{<ErrorsContainer />}</div>
-        <form onSubmit={this.handleSubmit}>
-          <div id="login-form">
-            <label>Username</label>
+        <div id="session-form">
+          <h1 id="form">{header}</h1>
 
-            <input type="text"
+          <div id="errors">{<ErrorsContainer />}</div>
+          <form onSubmit={this.handleSubmit}>
+            <div id="login-form">
+              <label>Username</label>
+
+              <input type="text"
                 value={this.state.username}
                 onChange={this.update('username')}
-            />
+                />
 
-            <label>Password</label>
+              <label>Password</label>
 
-            <input type="password"
-              value={this.state.password}
-              onChange={this.update('password')}
-            />
+              <input type="password"
+                value={this.state.password}
+                onChange={this.update('password')}
+                />
 
-            <div id="buttons">
-              <button type="submit">Submit</button>
-              {this.navLink()}
-              <button onClick={this.guestLogIn}>Guest Log In</button>
+              <div id="buttons">
+                <button type="submit">Submit</button>
+                {this.navLink()}
+                <button onClick={this.guestLogIn}>Guest Log In</button>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     );
   }
