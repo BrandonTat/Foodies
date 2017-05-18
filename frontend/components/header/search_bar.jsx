@@ -6,6 +6,9 @@ class SearchBar extends React.Component {
     this.state = {
       option: "Test"
     };
+
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.change = this.change.bind(this);
   }
 
   change(e) {
@@ -13,13 +16,21 @@ class SearchBar extends React.Component {
     this.setState({ option: e.target.value });
   }
 
+  handleSubmit(e) {
+    e.preventDefault();
+    console.log(this.state.option);
+  }
+
   render() {
     return (
-      <select onChange={this.change} value={this.state.option}>
-        <option value="A">Apple</option>
-        <option value="B">Banana</option>
-        <option value="C">Cranberry</option>
-      </select>
+      <form onSubmit={this.handleSubmit}>
+        <select onChange={this.change} value={this.state.option}>
+          <option value="A">Apple</option>
+          <option value="B">Banana</option>
+          <option value="C">Cranberry</option>
+        </select>
+        <button>button</button>
+      </form>
   );
   }
 }

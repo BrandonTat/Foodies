@@ -12,6 +12,12 @@ class Home extends React.Component {
     return (
       <div id="homepage">
         <HeaderContainer {...this.props}/>
+        <div id="upperHomepage">
+        </div>
+
+        <div id="lowerHomepage">
+          <h1>hello</h1>
+        </div>
       </div>
     );
   }
