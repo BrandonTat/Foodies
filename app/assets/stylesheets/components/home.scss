@@ -1,12 +1,11 @@
-#head {
-  border: 5px solid black;
-}
-
-#head:hover {
-  color: blue;
-}
-
-#logut {
-  display: flex;
-  justify-content: center;
+#homepage {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 50%;
+  z-index: -100;
+  background-image: url("https://images.pexels.com/photos/28883/pexels-photo-28883.jpg?w=1260&h=750&auto=compress&cs=tinysrgb");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

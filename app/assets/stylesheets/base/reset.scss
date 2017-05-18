@@ -24,3 +24,10 @@ footer, small {
 ul {
   list-style: none;
 }
+
+html {
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}

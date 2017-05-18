@@ -56,7 +56,7 @@ class SessionForm extends React.Component {
       header = "Become a Foodie";
     }
     return(
-      <div>
+      <div id="login">
         <div id="welcomeHeader">
           <h1 id="headerLogin">Foodies</h1>
           <h2 id="description"> - Food Search Engine</h2>
