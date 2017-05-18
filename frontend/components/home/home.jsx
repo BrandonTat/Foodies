@@ -11,7 +11,7 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <HeaderContainer history={this.props.history}/>
+        <HeaderContainer {...this.props}/>
       </div>
     );
   }
