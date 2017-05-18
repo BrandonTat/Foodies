@@ -27,6 +27,7 @@ class Home extends React.Component {
         </div>
 
         <div id="lowerHomepage">
+          <h2 id="trending">Hot and New</h2>
         </div>
       </div>
     );
