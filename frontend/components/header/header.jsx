@@ -7,6 +7,7 @@ class Header extends React.Component {
     super(props);
 
     this.handleLogout = this.handleLogout.bind(this);
+    this.handleHome = this.handleHome.bind(this);
   }
 
   handleLogout(e) {
@@ -14,17 +15,24 @@ class Header extends React.Component {
     this.props.logout();
   }
 
-  redirectHome() {
+  handleHome(e) {
+    e.preventDefault();
+    console.log("hello");
+    return <Redirect to="/home" />;
+  }
+
+  redirectLogin() {
     return <Redirect to="/" />;
   }
 
   render() {
     if (!this.props.currentUser) {
-      return this.redirectHome();
+      return this.redirectLogin();
     }
     return (
-      <div>
+      <div id="header">
         <button onClick={this.handleLogout}>Log Out</button>
+        <button onClick={this.handleHome}>Home</button>
       </div>
     );
   }
