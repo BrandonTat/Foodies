@@ -2,23 +2,27 @@ import React from 'react';
 
 import { Redirect } from 'react-router-dom';
 
-const home = () => (
-  <Redirect to="/" />
-);
-
-const personalGreeting = (currentUser, logout) => (
-  <div>
-    <h2>Welcome, {currentUser.username}</h2>
-    <button onClick={logout}>Log Out</button>
-  </div>
-);
-
-const Home = ({ currentUser, logout }) => {
-  if (currentUser) {
-    return personalGreeting(currentUser, logout);
-  } else {
-    return home();
+class Home extends React.Component {
+  constructor(props) {
+    super(props);
   }
-};
+
+  redirectHome() {
+    return <Redirect to="/" />;
+  }
+
+  render() {
+    if (!this.props.currentUser) {
+      return this.redirectHome();
+    }
+
+    return (
+      <div>
+        <h1>{this.props.currentUser.username}</h1>
+        <button onClick={this.props.logout}>Log Out</button>
+      </div>
+    );
+  }
+}
 
 export default Home;
