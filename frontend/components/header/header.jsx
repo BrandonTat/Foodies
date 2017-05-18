@@ -1,5 +1,6 @@
 import React from 'react';
 
+import SearchBar from './search_bar';
 import { Redirect } from 'react-router-dom';
 
 class Header extends React.Component {
@@ -32,6 +33,7 @@ class Header extends React.Component {
     return (
       <div id="header">
         <button onClick={this.handleHome}>Home</button>
+        < SearchBar />
         <button onClick={this.handleLogout}>Log Out</button>
       </div>
     );
