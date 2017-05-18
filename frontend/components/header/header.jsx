@@ -31,8 +31,8 @@ class Header extends React.Component {
     }
     return (
       <div id="header">
-        <button onClick={this.handleLogout}>Log Out</button>
         <button onClick={this.handleHome}>Home</button>
+        <button onClick={this.handleLogout}>Log Out</button>
       </div>
     );
   }

@@ -1,9 +1,12 @@
 #header {
   display: flex;
   justify-content: space-between;
-  border: 5px solid black;
-  margin: 0 1%;
   font-size: 50px;
-  color: white;
-  background-color: $abisso;
+  color: $terra ;
+  background-color: $acqua_pro;
+}
+
+#header button:hover{
+  cursor: pointer;
+  color: $light_terra;
 }
