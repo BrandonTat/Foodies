@@ -13,10 +13,20 @@ class Home extends React.Component {
       <div id="homepage">
         <HeaderContainer {...this.props}/>
         <div id="upperHomepage">
+
+          <div id="quote">
+            <h1>
+              You miss 100% of the shots you don't take.
+            </h1>
+
+            <h1>
+              - Michael Scott
+            </h1>
+          </div>
+          
         </div>
 
         <div id="lowerHomepage">
-          <h1>hello</h1>
         </div>
       </div>
     );

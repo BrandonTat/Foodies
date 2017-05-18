@@ -29,7 +29,7 @@ class SearchBar extends React.Component {
           <option value="B">Banana</option>
           <option value="C">Cranberry</option>
         </select>
-        <button>button</button>
+        <button><i className="fa fa-search"></i></button>
       </form>
   );
   }
