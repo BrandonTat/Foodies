@@ -1,7 +1,10 @@
 #header {
   display: flex;
   justify-content: space-between;
-  font-size: 50px;
+  position: fixed;
+  width: 100%;
+  font-size: 45px;
+
   color: $terra ;
   background-color: $acqua_pro;
 }

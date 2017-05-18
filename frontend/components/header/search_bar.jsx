@@ -24,7 +24,9 @@ class SearchBar extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <select onChange={this.change} value={this.state.option}>
+        <select onChange={this.change}
+          value={this.state.option}
+          id="search">
           <option value="A">Apple</option>
           <option value="B">Banana</option>
           <option value="C">Cranberry</option>

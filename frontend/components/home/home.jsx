@@ -23,7 +23,7 @@ class Home extends React.Component {
               - Michael Scott
             </h1>
           </div>
-          
+
         </div>
 
         <div id="lowerHomepage">
