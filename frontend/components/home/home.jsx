@@ -1,5 +1,6 @@
 import React from 'react';
 
+import HeaderContainer from '../header/header';
 import { Redirect } from 'react-router-dom';
 
 class Home extends React.Component {
@@ -7,19 +8,10 @@ class Home extends React.Component {
     super(props);
   }
 
-  redirectHome() {
-    return <Redirect to="/" />;
-  }
-
   render() {
-    if (!this.props.currentUser) {
-      return this.redirectHome();
-    }
-
     return (
       <div>
-        <h1>{this.props.currentUser.username}</h1>
-        <button onClick={this.props.logout}>Log Out</button>
+        <HeaderContainer history={this.props.history}/>
       </div>
     );
   }

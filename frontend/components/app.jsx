@@ -6,6 +6,7 @@ import {
 
 import SessionFormContainer from './session_form/session_form_container';
 import HomeContainer from './home/home_container';
+import HeaderContainer from './header/header_container';
 import { AuthRoute } from '../util/route_util';
 
 const App = () => (
@@ -14,7 +15,7 @@ const App = () => (
       <AuthRoute path="/login" component={SessionFormContainer} />
       <AuthRoute exact path="/" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
-      <Route path="/home" component={HomeContainer} />
+      <Route path="/home" component={HeaderContainer} />
     </Switch>
   </div>
 );
