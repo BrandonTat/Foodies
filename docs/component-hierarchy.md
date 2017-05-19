@@ -24,4 +24,4 @@
 | "/signin" | "AuthFormContainer" |
 | "/home" | "HomeContainer" |
 | "/search |  "BusinessIndexContainer |
-| "/business/:businessId" | "BusinessDetailContainer" |
+| "/businesses/:businessId" | "BusinessDetailContainer" |
