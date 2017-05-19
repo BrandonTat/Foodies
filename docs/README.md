@@ -67,6 +67,6 @@ adequate seed data and sufficient CSS styling:
 
 **Objective:** Setup a page where business information is displayed. Page will be accessible through links on map page. The business detail page will show price range, reviews, location on map, and possibly photos.
 
-### Phase 6 (1.5 days)
+### Phase 6: Reviews (1.5 days)
 
 **Objective:** Allow user to submit reviews and look at other reviews
