@@ -9,6 +9,10 @@
   background-color: $acqua_pro;
 }
 
+#header button {
+  margin: 0 20px;
+}
+
 #header button:hover{
   cursor: pointer;
   color: $light_terra;
