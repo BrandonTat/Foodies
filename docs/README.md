@@ -51,25 +51,21 @@ adequate seed data and sufficient CSS styling:
 
 **Objective:** Functioning rails project with front-end Authentication
 
-### Phase 2: Models and Seed Data (.5 days)
-
-**Objective:** To build complete business, review, photo, controllers,
-and views (JBuilder). Additionally create 10-15 restaurants and 6-7 users
-
-### Phase 3: Home Page (1.5 days)
+### Phase 2: Home Page (1.5 days)
 
 **Objective:** Setup functioning home page with links to sign in/sign up
 
-### Phase 4: Business Search (3 days)
+### Phase 3: Business Map (2 days)
 
-**Objective:** Allow user to search for businesses with location, price,
-and/or type, to setup a working search results page with links to filtered
-businesses, and to have locations on a map highlighted.
+**Objective:** Allow user to search for businesses on a map  and to have locations on a map highlighted.
+
+### Phase 4: Filter
+
+**Objective:** Allow users to filter businesses through map page based on price, type of food and location.
 
 ### Business Detail (1.5 days)
 
-**Objective:** Setup a page where business information is displayed. Page
-will show price range, reviews, location on map, and possibly photos.
+**Objective:** Setup a page where business information is displayed. Page will be accessible through links on map page. The business detail page will show price range, reviews, location on map, and possibly photos.
 
 ### Phase 6 (1.5 days)
 
