@@ -18,7 +18,6 @@ class Header extends React.Component {
 
   handleHome(e) {
     e.preventDefault();
-    console.log("hello");
     return <Redirect to="/home" />;
   }
 

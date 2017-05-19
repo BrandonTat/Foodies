@@ -40,5 +40,3 @@ class Home extends React.Component {
 }
 
 export default Home;
-
-// <h2 id="trending">Hot and New</h2>
