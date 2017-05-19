@@ -12,16 +12,17 @@ class BusinessIndex extends React.Component {
 
   render() {
     let businesses = values(this.props.businesses);
-    console.log(businesses.length);
     return(
-      <div>
+      <div id="mapPage">
         < HeaderContainer {...this.props} />
-        {businesses.map(business => (
-          <BusinessIndexItem
-            business={business}
-            key={business.id}
-          />
-        ))}
+        <div id="businesses">
+          {businesses.map(business => (
+            <BusinessIndexItem
+              business={business}
+              key={business.id}
+            />
+          ))}
+        </div>
       </div>
     );
   }
