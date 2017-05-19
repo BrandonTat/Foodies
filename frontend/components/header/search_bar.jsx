@@ -8,14 +8,8 @@ class SearchBar extends React.Component {
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
-    // this.change = this.change.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
-
-  // change(e) {
-  //   e.preventDefault();
-  //   this.setState({ option: e.target.value });
-  // }
 
   handleChange(e) {
     this.setState({ option: e.target.value });
