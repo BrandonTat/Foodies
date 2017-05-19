@@ -7,6 +7,7 @@ import {
 import SessionFormContainer from './session_form/session_form_container';
 import HomeContainer from './home/home_container';
 import HeaderContainer from './header/header_container';
+import BusinessIndexContainer from './business/business_index_container';
 import { AuthRoute } from '../util/route_util';
 
 const App = () => (
