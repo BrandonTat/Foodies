@@ -25,13 +25,6 @@ ul {
   list-style: none;
 }
 
-
-// -webkit-background-size: cover;
-// -moz-background-size: cover;
-// -o-background-size: cover;
-// background-size: cover;
-// }
-
 body {
   min-height: 100vh;
   width: 100%;
@@ -44,5 +37,5 @@ body {
 
 #root {
   height: 100%;
-  body: 100%;
+  width: 100%;
 }
