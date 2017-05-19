@@ -1,8 +1,9 @@
 # Foodies
-[Heroku link]
+[Heroku link][heroku]
 
 [Trello link][trello]
 
+[heroku]: https://foodies-yelp-clone.herokuapp.com/#/
 [trello]: https://trello.com/b/hPfeFHWL/foodies
 
 ## Minimum Viable Product
