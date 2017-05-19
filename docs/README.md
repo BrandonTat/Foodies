@@ -63,7 +63,7 @@ adequate seed data and sufficient CSS styling:
 
 **Objective:** Allow users to filter businesses through map page based on price, type of food and location.
 
-### Business Detail (1.5 days)
+### Phase 5: Business Detail (1.5 days)
 
 **Objective:** Setup a page where business information is displayed. Page will be accessible through links on map page. The business detail page will show price range, reviews, location on map, and possibly photos.
 
