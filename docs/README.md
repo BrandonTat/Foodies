@@ -59,7 +59,7 @@ adequate seed data and sufficient CSS styling:
 
 **Objective:** Allow user to search for businesses on a map  and to have locations on a map highlighted.
 
-### Phase 4: Filter (1.5)
+### Phase 4: Filter (1.5 days)
 
 **Objective:** Allow users to filter businesses through map page based on price, type of food and location.
 
