@@ -1,24 +1,18 @@
 import React from 'react';
 
 import SearchBar from './search_bar';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
 
     this.handleLogout = this.handleLogout.bind(this);
-    this.handleHome = this.handleHome.bind(this);
   }
 
   handleLogout(e) {
     e.preventDefault();
     this.props.logout();
-  }
-
-  handleHome(e) {
-    e.preventDefault();
-    return <Redirect to="/home" />;
   }
 
   redirectLogin() {
@@ -31,8 +25,11 @@ class Header extends React.Component {
     }
     return (
       <div id="header">
-        <button onClick={this.handleHome}>Home</button>
+        <Link to="/home">Home</Link>
         < SearchBar />
+        <Link to="/businesses">
+          <i className="fa fa-map"></i>
+        </Link>
         <button onClick={this.handleLogout}>Log Out</button>
       </div>
     );
