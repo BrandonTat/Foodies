@@ -10,8 +10,6 @@ class BusinessIndexItem extends React.Component {
     return (
       <ul>
         <li>{name}</li>
-        <li>{price}</li>
-        <li>{address}</li>
       </ul>
     );
   }
