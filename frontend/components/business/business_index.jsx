@@ -14,7 +14,7 @@ class BusinessIndex extends React.Component {
     let businesses = values(this.props.businesses);
     return(
       <div id="mapPage">
-        < HeaderContainer {...this.props} />
+        <HeaderContainer {...this.props} />
         <div id="businesses">
           {businesses.map(business => (
             <BusinessIndexItem
