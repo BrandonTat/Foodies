@@ -29,3 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   ReactDOM.render(<Root store={ store }/>, root);
 });
+
+// GOOG API KEY
+// AIzaSyBtYHes9Jjfhvm90H5eoxHKn7zfDbsDPWI

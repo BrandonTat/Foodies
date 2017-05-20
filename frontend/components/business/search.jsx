@@ -6,7 +6,7 @@ import BusinessMap from '../business_map/business_map';
 const Search = (props) => (
   <div>
     < BusinessIndex {...props} />
-    < BusinessMap />
+  < BusinessMap {...props}/>
   </div>
 );
 
