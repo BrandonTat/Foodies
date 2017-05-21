@@ -1,4 +1,12 @@
 #businesses {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   height: 300px;
+}
+
+#business {
+  display: flex;
+  flex-direction: column;
   overflow: scroll;
 }
