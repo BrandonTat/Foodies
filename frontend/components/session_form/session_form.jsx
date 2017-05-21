@@ -73,14 +73,14 @@ class SessionForm extends React.Component {
               <input type="text"
                 value={this.state.username}
                 onChange={this.update('username')}
-                />
+              />
 
               <label>Password</label>
 
               <input type="password"
                 value={this.state.password}
                 onChange={this.update('password')}
-                />
+              />
 
               <div id="buttons">
                 <button type="submit">Submit</button>
