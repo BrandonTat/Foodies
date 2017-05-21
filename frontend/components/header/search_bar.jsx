@@ -36,17 +36,3 @@ class SearchBar extends React.Component {
 }
 
 export default SearchBar;
-
-
-
-
-// <form onSubmit={this.handleSubmit}>
-//   <select onChange={this.change}
-//     value={this.state.option}
-//     id="search">
-//     <option value="A">Apple</option>
-//     <option value="B">Banana</option>
-//     <option value="C">Cranberry</option>
-//   </select>
-//   <button><i className="fa fa-search"></i></button>
-// </form>
