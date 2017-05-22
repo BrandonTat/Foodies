@@ -7,8 +7,13 @@
   overflow: scroll;
   background-color: transparent;
   top: 60px;
-  left: 10px;
+  left: 13px;
   border-radius: 5px;
+  box-shadow: 10px 5px 10px 0 #888888;
+}
+
+#businesses::-webkit-scrollbar {
+  width: 0;
 }
 
 #business {
@@ -19,13 +24,15 @@
   border-bottom: 1px solid $abisso;
   border-radius: 5px;
   font-size: 20px;
-  font-style: $sans
+  font-style: $sans;
+  box-shadow: 10px 10px 10px 0 #888888;
 }
 
 #business img {
   height: auto;
   width: 90%;
   margin: 20px auto;
+  border-radius: 5px;
 }
 
 #business:hover {

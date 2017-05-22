@@ -6,8 +6,8 @@
 }
 
 #map-container {
-  width: 100vw;
-  height: calc(100vh - 52px);
+  width: calc(100vw-10px);
+  height: calc(100vh - 53px);
   background-color: blue;
 }
 

@@ -3,7 +3,7 @@ import MarkerManager from '../../util/marker_manager';
 import { values } from 'lodash';
 
 const mapOptions = {
-  center: { lat: 37.7758, lng: -122.458},
+  center: { lat: 37.7758, lng: -122.457},
   zoom: 13
 };
 
