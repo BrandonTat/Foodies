@@ -21,6 +21,7 @@ export default class MarkerManager {
     const marker = new google.maps.Marker({
       position,
       map: this.map,
+      animation: google.maps.Animation.DROP,
       businessId: business.id
     });
 

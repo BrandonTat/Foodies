@@ -7,6 +7,12 @@
 
 #map-container {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 52px);
   background-color: blue;
+}
+
+#mapWindow {
+  text-align: center;
+  font-style: $lato;
+  font-size: 15px;
 }

@@ -2,6 +2,9 @@ import React from 'react';
 
 import BusinessIndexItem from "./business_index_item";
 import HeaderContainer from '../header/header_container';
+import Filters from './filters';
+
+const PRICES = { 1:'$', 2:'$$', 3:'$$$', 4:'$$$$'};
 
 class BusinessIndex extends React.Component {
 
@@ -15,6 +18,7 @@ class BusinessIndex extends React.Component {
       <div id="mapPage">
         <HeaderContainer {...this.props} />
         <div id="businesses">
+          < Filters {...this.props} />
           {businesses.map(business => (
             <BusinessIndexItem
               business={business}

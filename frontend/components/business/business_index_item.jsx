@@ -15,15 +15,17 @@ class BusinessIndexItem extends React.Component {
   }
 
   render() {
-    const { name, price, address, image_url,
+    const { id, name, price, address, image_url,
           state, city, zip } = this.props.business;
     return (
-      <ul id="business" onClick= {this.handleBusinessClick}>
-        <li>{name}</li>
-        <li>{address}, {city}, {state}, {zip}</li>
-        <li>{PRICES[price]}</li>
-        <img src={image_url}></img>
-      </ul>
+      <div id={id}>
+        <ul id="business" onClick= {this.handleBusinessClick}>
+          <li>{name}</li>
+          <li>{address}, {city}, {state}, {zip}</li>
+          <li>{PRICES[price]}</li>
+          <img src={image_url}></img>
+        </ul>
+      </div>
     );
   }
 }
