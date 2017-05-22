@@ -1,5 +1,7 @@
 import React from 'react';
 
+const PRICES = { 1:"$", 2:"$$", 3:"$$$", 4:"$$$$"};
+
 class BusinessIndexItem extends React.Component {
   constructor(props) {
     super(props);
@@ -8,16 +10,19 @@ class BusinessIndexItem extends React.Component {
   }
 
   handleBusinessClick(e) {
-    e.preventDefault;
+    e.preventDefault();
     console.log(this.props.business.id);
   }
 
   render() {
-    const { name, price, address } = this.props.business;
+    const { name, price, address, image_url,
+          state, city, zip } = this.props.business;
     return (
       <ul id="business" onClick= {this.handleBusinessClick}>
         <li>{name}</li>
-        <li>{address}</li>
+        <li>{address}, {city}, {state}, {zip}</li>
+        <li>{PRICES[price]}</li>
+        <img src={image_url}></img>
       </ul>
     );
   }

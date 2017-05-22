@@ -1,18 +1,33 @@
 #businesses {
   height: 100%;
-  width: 18%;
+  width: 30%;
   position: absolute;
   text-align: center;
   z-index: 1;
   overflow: scroll;
-  background-color: white;
+  background-color: transparent;
   top: 60px;
   left: 10px;
+  border-radius: 20px;
 }
 
 #business {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  overflow: scroll;
+  background: white;
+  padding-top: 15px;
+  border: 1px solid $abisso;
+  border-radius: 20px;
+  font-size: 20px;
+  font-style: $sans
+}
+
+#business img {
+  height: auto;
+  width: 90%;
+  margin: 20px auto;
+}
+
+#business:hover {
+  cursor: pointer;
 }
