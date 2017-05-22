@@ -1,5 +1,4 @@
 import React from 'react';
-import { values } from 'lodash';
 
 import BusinessIndexItem from "./business_index_item";
 import HeaderContainer from '../header/header_container';
@@ -11,7 +10,7 @@ class BusinessIndex extends React.Component {
   }
 
   render() {
-    let businesses = values(this.props.businesses);
+    let businesses = Object.values(this.props.businesses);
     return(
       <div id="mapPage">
         <HeaderContainer {...this.props} />

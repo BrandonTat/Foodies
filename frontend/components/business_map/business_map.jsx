@@ -42,6 +42,11 @@ class BusinessMap extends React.Component{
     marker.addListener('mouseout', () => {
       window.close(this.map, marker);
     });
+
+    // var mapDiv = document.getElementById(businessName);
+    // google.maps.event.addDomListener(mapDiv, 'mouseover', () => {
+    //   console.log(mapDiv);
+    // });
   }
 
   render() {
