@@ -3,22 +3,37 @@ import React from 'react';
 class Filters extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { prices: [] };
+    this.state = {
+      1: false,
+      2: false,
+      3: false,
+      4: false
+    };
 
     this.handlePrice = this.handlePrice.bind(this);
     this.togglePrice = this.togglePrice.bind(this);
   }
 
-  handlePrice(e) {
-    e.preventDefault();
-    console.log(e.target.value);
+  componentDidUpdate() {
+    
   }
 
+  handlePrice(e) {
+    e.preventDefault();
+    console.log(e.target.checked);
+    console.log(this.state);
+    let price = e.target.value;
+    console.log(price);
+
+    this.setState({ [price]: this.togglePrice(price)});
+  }
+
+
   togglePrice(price) {
-    if (this.state.prices[price]) {
-      return true;
-    } else {
+    if (this.state[price]) {
       return false;
+    } else {
+      return true;
     }
   }
 
@@ -27,34 +42,34 @@ class Filters extends React.Component {
       <div id="priceFilter">
         <label>
           $<input
-            onChange={this.handlePrice}
+            onClick={this.handlePrice}
             value={1}
             type="checkbox"
-            checked={this.togglePrice(1)}
+            checked={this.state[1]}
           />
         </label>
         <label>
           $$<input
-            onChange={this.handlePrice}
+            onClick={this.handlePrice}
             value={2}
             type="checkbox"
-            checked={this.togglePrice(2)}
+            checked={this.state[2]}
           />
         </label>
         <label>
           $$$<input
-            onChange={this.handlePrice}
+            onClick={this.handlePrice}
             value={3}
             type="checkbox"
-            checked={this.togglePrice(3)}
+            checked={this.state[3]}
           />
         </label>
         <label>
           $$$$<input
-            onChange={this.handlePrice}
+            onClick={this.handlePrice}
             value={4}
             type="checkbox"
-            checked={this.togglePrice(4)}
+            checked={this.state[4]}
           />
         </label>
 
