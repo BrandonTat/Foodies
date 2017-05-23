@@ -23,6 +23,7 @@ class BusinessIndex extends React.Component {
             <BusinessIndexItem
               business={business}
               key={business.id}
+              history = {this.props.history}
             />
           ))}
         </div>

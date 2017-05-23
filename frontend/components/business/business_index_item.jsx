@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PRICES = { 1:"$", 2:"$$", 3:"$$$", 4:"$$$$"};
 
@@ -11,7 +12,8 @@ class BusinessIndexItem extends React.Component {
 
   handleBusinessClick(e) {
     e.preventDefault();
-    console.log(this.props.business.id);
+    let businessId = this.props.business.id;
+    this.props.history.push(`/businesses/${businessId}`);
   }
 
   render() {
