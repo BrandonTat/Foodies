@@ -1,5 +1,5 @@
 export const fetchBusiness = id => {
-  $.ajax({
+  return $.ajax({
     method: "GET",
     url: `api/businesses/${id}`
   });

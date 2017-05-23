@@ -26,7 +26,7 @@ class Header extends React.Component {
     return (
       <div id="header">
         <Link to="/home">Home</Link>
-        < SearchBar />
+        < SearchBar {...this.props}/>
         <Link to="/businesses">
           <i className="fa fa-map"></i>
         </Link>

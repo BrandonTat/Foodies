@@ -9,6 +9,7 @@ class SearchBar extends React.Component {
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.handleSearch = this.handleSearch.bind(this);
   }
 
   handleChange(e) {
@@ -17,6 +18,11 @@ class SearchBar extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
+  }
+
+  handleSearch(e) {
+    e.preventDefault();
+    this.props.history.push('/businesses');
   }
 
   render() {
@@ -29,7 +35,7 @@ class SearchBar extends React.Component {
           onChange = {this.handleChange}
         />
 
-        <button><i className="fa fa-search"></i></button>
+      <button onClick={this.handleSearch}><i className="fa fa-search"></i></button>
       </form>
   );
   }

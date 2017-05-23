@@ -28,11 +28,11 @@ class BusinessMap extends React.Component{
 
   showBusiness(marker) {
     let businessId = marker.businessId;
-    let business = this.props.businesses[businessId];
+    let businessItem = this.props.businesses[businessId];
 
     let content = "<div id='mapWindow'>" +
-      `<h1>${business.name}</h1>` +
-      `<h2>${business.address}, ${business.city}, ${business.state}, ${business.zip}</h2>` +
+      `<h1>${businessItem.name}</h1>` +
+      `<h2>${businessItem.address}, ${businessItem.city}, ${businessItem.state}, ${businessItem.zip}</h2>` +
       "</div>";
 
     const window = new google.maps.InfoWindow({
