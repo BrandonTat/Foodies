@@ -8,9 +8,9 @@
 #  review_text :text             not null
 #  rating      :integer          not null
 #  price       :integer          not null
-#  photo_url   :string           not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  photo_url   :string
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html

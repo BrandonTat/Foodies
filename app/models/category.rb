@@ -9,4 +9,7 @@
 #
 
 class Category < ApplicationRecord
+  validates :type, presence: true;
+
+  has_many :tags
 end
