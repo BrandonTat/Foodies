@@ -1,0 +1,17 @@
+#businessShow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#businessShowInfo {
+  border-bottom: 1px solid black;
+  width: 100vw;
+}
+
+#businessShowInfo li {
+  text-align: center;
+  font-family: $lato;
+  font-size: 20px;
+}
