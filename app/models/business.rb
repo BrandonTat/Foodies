@@ -19,11 +19,13 @@
 
 class Business < ApplicationRecord
   validates :name, :address, :city, :state, :zip, :price, :image_url,
-            :lat, :lng, :category_id, presence: true
+            :lat, :lng, presence: true
   validates :name, uniqueness: true
   validates :price, inclusion: { in: [1, 2, 3, 4] }
 
   has_many :categories,
     through: :tags,
     source: :category
+
+  has_many :reviews
 end

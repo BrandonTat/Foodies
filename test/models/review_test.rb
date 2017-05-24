@@ -7,7 +7,6 @@
 #  user_id     :integer          not null
 #  review_text :text             not null
 #  rating      :integer          not null
-#  price       :integer          not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #  photo_url   :string
