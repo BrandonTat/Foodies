@@ -43,7 +43,7 @@ class ReviewForm extends React.Component {
       user_id,
       review_text,
       rating,
-      photo_url
+      // photo_url
     };
 
     console.log(newReview);

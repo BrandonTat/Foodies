@@ -11,8 +11,8 @@ class Api::ReviewsController < ApplicationController
   end
 
   def create
-    @review = Review.create(review_params)
     debugger
+    @review = Review.create(review_params)
     if @review.save
       render :show
     else

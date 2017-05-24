@@ -20,7 +20,7 @@ export const fetchReviews = (businessId) => dispatch => (
 );
 
 export const createReview = (businessId, review) => dispatch => (
-  ReviewUtil.postReview(businessId, review.id).then(data => (
+  ReviewUtil.postReview(businessId, review).then(data => (
     dispatch(receiveReview(data))
   ))
 );
