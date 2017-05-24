@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ReviewIndexItem from './review_index_item';
+import ReviewForm from './review_form';
 
 class ReviewIndex extends React.Component {
   constructor(props) {
@@ -14,6 +15,7 @@ class ReviewIndex extends React.Component {
       let {reviews} = this.props;
       return(
         <div>
+          <ReviewForm {...this.props}/>
           {reviews.map(review => (
             <ReviewIndexItem
               key={review.id}

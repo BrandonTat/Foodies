@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 
 import { fetchBusiness } from '../../actions/business_actions';
-import { fetchReviews } from '../../actions/review_actions';
+import { fetchReviews, createReview } from '../../actions/review_actions';
 import BusinessShow from './business_show';
 
 const mapStateToProps = (state, { match }) => ({
@@ -12,7 +12,8 @@ const mapStateToProps = (state, { match }) => ({
 
 const mapDispatchToProps = dispatch => ({
   fetchBusiness: (id) => dispatch(fetchBusiness(id)),
-  fetchReviews: (businessId) => dispatch(fetchReviews(businessId))
+  fetchReviews: (businessId) => dispatch(fetchReviews(businessId)),
+  createReview: (businessId, review) => dispatch(createReview(businessId, review))
 });
 
 export default connect(
