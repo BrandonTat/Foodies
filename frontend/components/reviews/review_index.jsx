@@ -9,11 +9,9 @@ class ReviewIndex extends React.Component {
 
   render() {
     if (this.props.reviews.length === 0) {
-      console.log(this.props.reviews);
       return <div>loading</div>;
     } else {
       let {reviews} = this.props;
-      console.log("loaded", reviews);
       return(
         <div>
           {reviews.map(review => (

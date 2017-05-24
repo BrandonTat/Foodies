@@ -34,6 +34,7 @@ class BusinessShow extends React.Component{
               <li id="businessInfo">{PRICES[price]}</li>
               <li id="businessInfo">{phone_number}</li>
             </ul>
+            <h2>Reviews</h2>
             <ReviewIndexContainer reviews={this.props.reviews}/>
           </div>
         );
