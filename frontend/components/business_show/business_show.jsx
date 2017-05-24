@@ -27,10 +27,10 @@ class BusinessShow extends React.Component{
             <HeaderContainer {...this.props} />
             <BusinessShowMap business={this.props.business} />
             <ul id="businessShowInfo">
-              <li>{name}</li>
-              <li>{address}, {city}, {state}, {zip}</li>
-              <li>{PRICES[price]}</li>
-              <li>{phone_number}</li>
+              <li id="businessShowName">{name}</li>
+              <li id="businessInfo">{address}, {city}, {state}, {zip}</li>
+              <li id="businessInfo">{PRICES[price]}</li>
+              <li id="businessInfo">{phone_number}</li>
             </ul>
           </div>
         );

@@ -27,9 +27,6 @@ class Header extends React.Component {
       <div id="header">
         <Link to="/home">Home</Link>
         < SearchBar {...this.props}/>
-        <Link to="/businesses">
-          <i className="fa fa-map"></i>
-        </Link>
         <button onClick={this.handleLogout}>Log Out</button>
       </div>
     );

@@ -8,10 +8,20 @@
 #businessShowInfo {
   border-bottom: 1px solid black;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
 }
 
-#businessShowInfo li {
-  text-align: center;
-  font-family: $lato;
+#businessShowName {
+  font-size: 45px;
+  font-family: $sans;
+  margin: 10px 0;
+}
+
+#businessInfo {
   font-size: 20px;
+  font-family: $sans;
+  padding: 3px;
 }
