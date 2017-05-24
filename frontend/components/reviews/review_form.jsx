@@ -46,9 +46,7 @@ class ReviewForm extends React.Component {
       // photo_url
     };
 
-    console.log(newReview);
-
-    this.props.createReview(business_id, newReview);
+    this.props.createReview(newReview);
     this.navigateToBusinessShow();
   }
 

@@ -19,8 +19,8 @@ export const fetchReviews = (businessId) => dispatch => (
   ))
 );
 
-export const createReview = (businessId, review) => dispatch => (
-  ReviewUtil.postReview(businessId, review).then(data => (
+export const createReview = (review) => dispatch => (
+  ReviewUtil.postReview(review).then(data => (
     dispatch(receiveReview(data))
   ))
 );
