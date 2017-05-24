@@ -8,3 +8,4 @@ json.user do
 end
 
 json.review_text review.review_text
+json.rating review.rating

@@ -6,6 +6,7 @@ import Root from './components/root';
 //REMOVE AFTER TESTING
 import { signup, login, logout } from './actions/session_actions';
 import { fetchBusinesses, fetchBusiness } from './actions/business_actions';
+import { fetchReviews } from './actions/review_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('root');
@@ -25,7 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
   window.logout = logout;
   window.fetchBusinesses = fetchBusinesses;
   window.fetchBusiness = fetchBusiness;
-  // store.dispatch(fetchBusinesses()).then(console.log);
+  window.fetchReviews = fetchReviews;
+  // store.dispatch(fetchReviews(121)).then(console.log);
 
 
   ReactDOM.render(<Root store={ store }/>, root);

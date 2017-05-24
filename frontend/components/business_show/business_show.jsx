@@ -2,6 +2,7 @@ import React from 'react';
 
 import HeaderContainer from '../header/header_container';
 import BusinessShowMap from '../business_map/business_show_map';
+import ReviewIndexContainer from '../reviews/review_index_container';
 
 const PRICES = { 1:"$", 2:"$$", 3:"$$$", 4:"$$$$"};
 
@@ -13,6 +14,7 @@ class BusinessShow extends React.Component{
   componentWillMount() {
     let {businessId} = this.props;
     this.props.fetchBusiness(businessId);
+    this.props.fetchReviews(businessId);
   }
 
   render() {
@@ -32,6 +34,7 @@ class BusinessShow extends React.Component{
               <li id="businessInfo">{PRICES[price]}</li>
               <li id="businessInfo">{phone_number}</li>
             </ul>
+            <ReviewIndexContainer reviews={this.props.reviews}/>
           </div>
         );
       }

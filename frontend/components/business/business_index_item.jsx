@@ -18,7 +18,7 @@ class BusinessIndexItem extends React.Component {
 
   render() {
     const { id, name, price, address, image_url,
-          state, city, zip } = this.props.business;
+          state, city, zip, reviews } = this.props.business;
     return (
       <div id={id}>
         <ul id="business" onClick= {this.handleBusinessClick}>
