@@ -22,7 +22,7 @@ class BusinessShow extends React.Component{
       name, address, city, state,
       zip, price, phone_number} = this.props.business;
       if (this.props.business === undefined) {
-          return (<div>Loading</div>);
+          return <h1>loading</h1>;
       } else {
         return (
           <div id="businessShow">
