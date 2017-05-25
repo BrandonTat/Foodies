@@ -32,7 +32,7 @@ class Home extends React.Component {
         </div>
 
         <div id="lowerHomepage">
-          <label id="popular"> < HomeIndex /> </label>
+          <label id="popular"> <HomeIndex /> </label>
         </div>
       </div>
     );

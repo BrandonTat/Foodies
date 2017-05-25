@@ -13,6 +13,7 @@ class ReviewForm extends React.Component {
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.updateRating = this.updateRating.bind(this);
+    this.upload = this.upload.bind(this);
   }
 
   update(property) {
@@ -21,6 +22,17 @@ class ReviewForm extends React.Component {
 
   updateRating(rate) {
     this.setState({rating: rate});
+  }
+
+  upload(e) {
+    e.preventDefault();
+    cloudinary.openUploadWidget(
+      window.cloudinary_options,
+      (err, results) => {
+        if(!err) {
+          this.setState({photo_url: results[0].secure_url});
+      }
+    });
   }
 
   handleSubmit(e) {
@@ -34,9 +46,9 @@ class ReviewForm extends React.Component {
       user_id,
       review_text,
       rating,
-      // photo_url
+      photo_url
     };
-    console.log(this.props);
+
     this.props.createReview(newReview)
       .then(() => this.props.closeModal());
     this.setState({review_text:"", rating:0, photo_url:""});
@@ -46,7 +58,7 @@ class ReviewForm extends React.Component {
     return(
       <form id="reviewForm" onSubmit={this.handleSubmit}>
         <div id="rating">
-          <label>Select your rating</label>
+          <label id="imageLabels">Select your rating</label>
           <Rating
             empty="fa fa-star-o fa-2x"
             full="fa fa-star fa-2x"
@@ -57,7 +69,7 @@ class ReviewForm extends React.Component {
         </div>
 
         <div id="reviewThoughts">
-          <label>Your Review</label>
+          <label id="imageLabels">Your Review</label>
           <textarea
             cols="30"
             rows="10"
@@ -68,8 +80,14 @@ class ReviewForm extends React.Component {
             />
         </div>
 
+        <label id="imageIcon">Upload an image</label>
+        <label id="imageIcon">(optional, max 1)</label>
+        <button id="imageUpload" onClick={this.upload}>
+          <i className="fa fa-cloud-upload" aria-hidden="true"></i>
+        </button>
+
         <div id="reviewErrors">
-          <ErrorsContainer/>
+          <ErrorsContainer />
         </div>
           <input type="submit" value="Post Review"/>
       </form>
