@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
+import Modal from 'react-modal';
 
 //REMOVE AFTER TESTING
 import { signup, login, logout } from './actions/session_actions';
@@ -29,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.fetchReviews = fetchReviews;
   // store.dispatch(fetchReviews(121)).then(console.log);
 
-
+  Modal.setAppElement(document.body);
   ReactDOM.render(<Root store={ store }/>, root);
 });
 

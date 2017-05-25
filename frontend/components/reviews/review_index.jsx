@@ -2,10 +2,24 @@ import React from 'react';
 
 import ReviewIndexItem from './review_index_item';
 import ReviewForm from './review_form';
+import Modal from 'react-modal';
+import ModalStyle from '../modal_style';
 
 class ReviewIndex extends React.Component {
   constructor(props) {
     super(props);
+
+    this.state= {modalIsOpen: false};
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+  }
+
+  openModal() {
+    this.setState({modalIsOpen: true});
+  }
+
+  closeModal() {
+    this.setState({modalIsOpen: false});
   }
 
   render() {
@@ -15,7 +29,16 @@ class ReviewIndex extends React.Component {
       let {reviews} = this.props;
       return(
         <div>
-          <ReviewForm {...this.props}/>
+          <button onClick={this.openModal}>OpenModal</button>
+          <Modal
+            isOpen={this.state.modalIsOpen}
+            onRequestClose={this.closeModal}
+            style={ModalStyle}
+            contentLabel="example Modal"
+          >
+            <ReviewForm {...this.props}
+              closeModal={this.closeModal}/>
+          </Modal>
           {reviews.map(review => (
             <ReviewIndexItem
               key={review.id}
@@ -30,5 +53,3 @@ class ReviewIndex extends React.Component {
 }
 
 export default ReviewIndex;
-
-// review={review}

@@ -1,0 +1,44 @@
+#reviewForm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#reviewForm textarea {
+  border: 2px solid black;
+  text-align: center
+}
+
+#reviewForm div {
+  padding: 7% 0;
+}
+
+#rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#rating label {
+  font-size: 20px;
+  margin: 15px;
+}
+
+#reviewText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#reviewForm input {
+  font-size: 20px;
+  background-color: red;
+  color: #F0EAD6;
+}
+
+#reviewForm input:hover {
+  cursor: pointer;
+}

@@ -14,10 +14,6 @@ class ReviewForm extends React.Component {
     this.updateRating = this.updateRating.bind(this);
   }
 
-  handleSubmit(e) {
-    e.preventDefault();
-  }
-
   update(property) {
     return e => this.setState({ [property]: e.currentTarget.value });
   }
@@ -40,31 +36,36 @@ class ReviewForm extends React.Component {
       // photo_url
     };
 
-    this.props.createReview(newReview);
+    this.props.createReview(newReview).then(this.props.closeModal());
     this.setState({review_text:"", rating:0, photo_url:""});
   }
 
   render() {
     return(
-      <form onSubmit={this.handleSubmit}>
-        <label>Rating</label>
-        <Rating
-          empty="fa fa-star-o fa-2x"
-          full="fa fa-star fa-2x"
-          initialRate={this.state.rating}
-          stop={5}
-          onChange={this.updateRating}
-        />
+      <form id="reviewForm" onSubmit={this.handleSubmit}>
+        <div id="rating">
+          <label>Select your rating</label>
+          <Rating
+            empty="fa fa-star-o fa-2x"
+            full="fa fa-star fa-2x"
+            initialRate={this.state.rating}
+            stop={5}
+            onChange={this.updateRating}
+          />
+        </div>
 
-        <label>Review</label>
-        <textarea
-          cols="30"
-          rows="10"
-          value={this.state.review_text}
-          onChange={this.update("review_text")}
-        />
+        <div id="reviewText">
+          <label>Review</label>
+          <textarea
+            cols="30"
+            rows="10"
+            placeholder="Your thoughts?"
+            value={this.state.review_text}
+            onChange={this.update("review_text")}
+            />
+        </div>
 
-        <input type="submit"/>
+          <input type="submit" value="Post Review"/>
       </form>
     );
   }
