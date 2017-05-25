@@ -21,25 +21,26 @@ class BusinessShow extends React.Component{
     let {
       name, address, city, state,
       zip, price, phone_number} = this.props.business;
-      if (this.props.business === undefined) {
-          return <h1>loading</h1>;
-      } else {
-        return (
-          <div id="businessShow">
-            <HeaderContainer {...this.props} />
-            <BusinessShowMap business={this.props.business} />
-            <ul id="businessShowInfo">
-              <li id="businessShowName">{name}</li>
-              <li id="businessInfo">{address}, {city}, {state}, {zip}</li>
-              <li id="businessInfo">{PRICES[price]}</li>
-              <li id="businessInfo">{phone_number}</li>
-            </ul>
-            <h2>Reviews</h2>
+    let reviews = this.props.reviews;
 
-            <ReviewIndexContainer {...this.props}/>
-          </div>
-        );
-      }
+    if (this.props.business === undefined) {
+        return <h1>loading</h1>;
+    } else {
+      return (
+        <div id="businessShow">
+          <HeaderContainer {...this.props} />
+          <BusinessShowMap business={this.props.business} />
+          <ul id="businessShowInfo">
+            <li id="businessShowName">{name}</li>
+            <li id="businessInfo">{address}, {city}, {state}, {zip}</li>
+            <li id="businessInfo">{reviews.length} Reviews || {PRICES[price]}</li>
+            <li id="businessInfo">{phone_number}</li>
+          </ul>
+
+          <ReviewIndexContainer {...this.props}/>
+        </div>
+      );
+    }
   }
 }
 

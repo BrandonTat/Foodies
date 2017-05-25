@@ -28,8 +28,9 @@ class ReviewIndex extends React.Component {
     } else {
       let {reviews} = this.props;
       return(
-        <div>
-          <button onClick={this.openModal}>OpenModal</button>
+        <div id="reviewIndex">
+          <h2 id="reviewIndexTitle">Reviews</h2>
+          <button id="modal" onClick={this.openModal}>Post Review</button>
           <Modal
             isOpen={this.state.modalIsOpen}
             onRequestClose={this.closeModal}
