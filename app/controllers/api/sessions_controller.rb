@@ -7,7 +7,6 @@ class Api::SessionsController < ApplicationController
 
     if @user
       login(@user)
-      #### May need to change to user
       render "api/users/show"
     else
       render(
@@ -21,7 +20,6 @@ class Api::SessionsController < ApplicationController
     @user = current_user
     if @user
       logout
-      #### May need to change to user
       render "api/users/show"
     else
       render(

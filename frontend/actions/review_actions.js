@@ -1,8 +1,8 @@
 import * as ReviewUtil from '../util/review_util';
 
-export const RECEIVE_REVIEWS = "RECEIVE_REVIEWS";
-export const RECEIVE_REVIEW = "RECEIVE_REVIEW";
-export const REMOVE_REVIEW = "REMOVE_REVIEW";
+export const RECEIVE_REVIEWS = 'RECEIVE_REVIEWS';
+export const RECEIVE_REVIEW = 'RECEIVE_REVIEW';
+export const REMOVE_REVIEW = 'REMOVE_REVIEW';
 
 export const receiveReview = review => ({
   type: RECEIVE_REVIEW,
@@ -36,3 +36,13 @@ export const deleteReview = review => dispatch => (
     dispatch(removeReview(data))
   ))
 );
+
+
+export const RECEIVE_RATING_ERRORS = 'RECEIVE_RATING_ERRORS';
+
+export const receiveErrors = errors => ({
+  type: RECEIVE_RATING_ERRORS,
+  errors
+});
+
+expo
