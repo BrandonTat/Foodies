@@ -25,11 +25,13 @@ export const fetchReviews = businessId => dispatch => (
   ))
 );
 
-export const createReview = review => dispatch => (
-  ReviewUtil.postReview(review).then(data => (
-    dispatch(receiveReview(data))
-  ))
-);
+export const createReview = review => dispatch => {
+  return ReviewUtil.postReview(review).then(data => {
+    dispatch(receiveReview(data));
+  }, err => (
+    dispatch(receiveRatingErrors(err.responseJSON))
+  ));
+};
 
 export const deleteReview = review => dispatch => (
   ReviewUtil.deleteReview(review).then(data => (
@@ -40,9 +42,7 @@ export const deleteReview = review => dispatch => (
 
 export const RECEIVE_RATING_ERRORS = 'RECEIVE_RATING_ERRORS';
 
-export const receiveErrors = errors => ({
+export const receiveRatingErrors = errors => ({
   type: RECEIVE_RATING_ERRORS,
   errors
 });
-
-expo

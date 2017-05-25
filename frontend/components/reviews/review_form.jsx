@@ -1,5 +1,6 @@
 import React from 'react';
 import Rating from 'react-rating';
+import ErrorsContainer from '../errors/errors_container';
 
 class ReviewForm extends React.Component {
   constructor(props) {
@@ -35,8 +36,9 @@ class ReviewForm extends React.Component {
       rating,
       // photo_url
     };
-
-    this.props.createReview(newReview).then(this.props.closeModal());
+    console.log(this.props);
+    this.props.createReview(newReview)
+      .then(() => this.props.closeModal());
     this.setState({review_text:"", rating:0, photo_url:""});
   }
 
@@ -54,17 +56,21 @@ class ReviewForm extends React.Component {
           />
         </div>
 
-        <div id="reviewText">
-          <label>Review</label>
+        <div id="reviewThoughts">
+          <label>Your Review</label>
           <textarea
             cols="30"
             rows="10"
-            placeholder="Your thoughts?"
+            placeholder="Your review helps others learn about
+            great local businesses."
             value={this.state.review_text}
             onChange={this.update("review_text")}
             />
         </div>
 
+        <div id="reviewErrors">
+          <ErrorsContainer/>
+        </div>
           <input type="submit" value="Post Review"/>
       </form>
     );

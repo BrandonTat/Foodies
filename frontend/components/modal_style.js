@@ -15,7 +15,7 @@ module.exports = {
     right           : '25%',
     bottom          : '15%',
     minHeight      : '200px',
-    minWidth       : '200px',
+    minWidth       : '150px',
     border          : '1px solid #ccc',
     borderRadius    : '5px',
     backgroundColor: 'white',
