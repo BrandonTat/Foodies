@@ -5,7 +5,7 @@ export const fetchReviews = (businessId) => {
   });
 };
 
-export const postReview = (review) => {
+export const postReview = review => {
   return $.ajax({
     method: "POST",
     url: `/api/businesses/${review.business_id}/reviews`,
@@ -13,9 +13,9 @@ export const postReview = (review) => {
   });
 };
 
-export const deleteReview = (businessId, reviewId) => {
+export const deleteReview = review => {
   return $.ajax({
     method: "DELETE",
-    url: `/api/businesses/${businessId}/reviews/${reviewId}`
+    url: `/api/businesses/${review.business_id}/reviews/${review.id}`
   });
 };

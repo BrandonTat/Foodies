@@ -1,7 +1,8 @@
-import * as ReviewUtil from "../util/review_util";
+import * as ReviewUtil from '../util/review_util';
 
 export const RECEIVE_REVIEWS = "RECEIVE_REVIEWS";
 export const RECEIVE_REVIEW = "RECEIVE_REVIEW";
+export const REMOVE_REVIEW = "REMOVE_REVIEW";
 
 export const receiveReview = review => ({
   type: RECEIVE_REVIEW,
@@ -13,14 +14,25 @@ export const receiveReviews = reviews => ({
   reviews
 });
 
-export const fetchReviews = (businessId) => dispatch => (
+export const removeReview = review => ({
+  type: REMOVE_REVIEW,
+  review
+});
+
+export const fetchReviews = businessId => dispatch => (
   ReviewUtil.fetchReviews(businessId).then(reviews => (
     dispatch(receiveReviews(reviews))
   ))
 );
 
-export const createReview = (review) => dispatch => (
+export const createReview = review => dispatch => (
   ReviewUtil.postReview(review).then(data => (
     dispatch(receiveReview(data))
+  ))
+);
+
+export const deleteReview = review => dispatch => (
+  ReviewUtil.deleteReview(review).then(data => (
+    dispatch(removeReview(data))
   ))
 );

@@ -12,7 +12,6 @@ class ReviewForm extends React.Component {
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.updateRating = this.updateRating.bind(this);
-    this.navigateToBusinessShow = this.navigateToBusinessShow.bind(this);
   }
 
   handleSubmit(e) {
@@ -25,11 +24,6 @@ class ReviewForm extends React.Component {
 
   updateRating(rate) {
     this.setState({rating: rate});
-  }
-
-  navigateToBusinessShow() {
-    const url = `/businesses/${this.props.business.id}`;
-    this.props.history.push(url);
   }
 
   handleSubmit(e) {
@@ -47,7 +41,7 @@ class ReviewForm extends React.Component {
     };
 
     this.props.createReview(newReview);
-    this.navigateToBusinessShow();
+    this.setState({review_text:"", rating:0, photo_url:""});
   }
 
   render() {

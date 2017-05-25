@@ -20,6 +20,7 @@ class ReviewIndex extends React.Component {
             <ReviewIndexItem
               key={review.id}
               review={review}
+              {...this.props}
             />
           ))}
         </div>
@@ -29,3 +30,5 @@ class ReviewIndex extends React.Component {
 }
 
 export default ReviewIndex;
+
+// review={review}

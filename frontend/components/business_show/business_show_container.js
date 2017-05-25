@@ -13,7 +13,7 @@ const mapStateToProps = (state, { match }) => ({
 const mapDispatchToProps = dispatch => ({
   fetchBusiness: (id) => dispatch(fetchBusiness(id)),
   fetchReviews: (businessId) => dispatch(fetchReviews(businessId)),
-  createReview: (businessId, review) => dispatch(createReview(businessId, review))
+  createReview: (review) => dispatch(createReview(review))
 });
 
 export default connect(
