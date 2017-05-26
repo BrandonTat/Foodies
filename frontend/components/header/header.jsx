@@ -21,8 +21,7 @@ class Header extends React.Component {
 
   render() {
     if (!this.props.currentUser) {
-      return (<div></div>);
-      // return this.redirectLogin();
+      return this.redirectLogin();
     }
     return (
       <div id="header">

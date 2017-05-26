@@ -40,16 +40,16 @@ c15 = Category.create!(category_type: "Mediterranean")
 c16 = Category.create!(category_type: "Dessert")
 
 b1 = Business.create!(
-  name: "ju-ni",
-  address: "1335 Fulton St",
+  name: "Tropisueno",
+  address: "75 Yerba Buena Ln",
   city: "San Francisco",
   state: "CA",
-  zip: "94117",
-  price: "4",
-  image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495411029/sushi_pvilca.jpg",
-  lat: 37.776589,
-  lng: -122.438833,
-  phone_number: "(415) 655-9924"
+  zip: "94103",
+  price: 2,
+  image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/c_fill,h_350,w_350/v1495816945/food-salad-healthy-lunch_imiwrr.jpg",
+  lat: 37.785349,
+  lng: -122.403828,
+  phone_number: "(415) 243-0299"
 )
 
 b2 = Business.create!(
@@ -59,7 +59,7 @@ b2 = Business.create!(
   state: "CA",
   zip: "94117",
   price: 3,
-  image_url: "httpss://res.cloudinary.com/dkdpoayma/image/upload/c_fill,h_350,w_350/v1495407315/brunch_v0cewv.jpg",
+  image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/c_fill,h_350,w_350/v1495407315/brunch_v0cewv.jpg",
   lat: 37.774901,
   lng: -122.437509,
   phone_number: "(415) 864-8643"
@@ -72,7 +72,7 @@ b3 = Business.create!(
   state: "CA",
   zip: "94133",
   price: 2,
-  image_url: "httpss://res.cloudinary.com/dkdpoayma/image/upload/c_fill,h_350,q_80,w_350/v1495413276/pexels-photo-106185_drcvph.jpg",
+  image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/c_fill,h_350,q_80,w_350/v1495413276/pexels-photo-106185_drcvph.jpg",
   lat: 37.798125,
   lng: -122.407543,
   phone_number: "(415) 781-7673"
@@ -85,7 +85,7 @@ b4 = Business.create!(
   state: "CA",
   zip: "94110",
   price: 1,
-  image_url: "httpss://res.cloudinary.com/dkdpoayma/image/upload/c_fill,h_350,w_350/v1495407314/food-ice-cream_wvsst4.jpg",
+  image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/c_fill,h_350,w_350/v1495407314/food-ice-cream_wvsst4.jpg",
   lat: 37.761623,
   lng: -122.425742,
   phone_number: "(415) 626-5600"
@@ -98,7 +98,7 @@ b5 = Business.create!(
   state: "CA",
   zip: "94105",
   price: 2,
-  image_url: "httpss://res.cloudinary.com/dkdpoayma/image/upload/c_fill,h_350,w_350/v1495410662/sushiritto_csfel9.jpg",
+  image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/c_fill,h_350,w_350/v1495410662/sushiritto_csfel9.jpg",
   lat: 37.788139,
   lng: -122.401021,
   phone_number: "(415) 495-7655"
@@ -144,29 +144,29 @@ b8 = Business.create!(
 )
 
 b9 = Business.create!(
-  name: "El Farolito",
-  address: "2779 Mission St",
+  name: "Bella Trattoria",
+  address: "3854 Geary Blvd",
   city: "San Francisco",
   state: "CA",
-  zip: "94110",
-  price: 1,
-  image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495412918/348s_mi0ez3.jpg",
-  lat: 37.752656,
-  lng: -122.418103,
-  phone_number: "(415) 824-7877"
+  zip: "94118",
+  price: 2,
+  image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/c_fill,h_350,w_350/v1495407314/lobster_s9v3we.jpg",
+  lat: 37.781364,
+  lng: -122.460937,
+  phone_number: "(415) 221-0305"
 )
 
 b10 = Business.create!(
-  name: "Tropisueno",
-  address: "75 Yerba Buena Ln",
+  name: "ju-ni",
+  address: "1335 Fulton St",
   city: "San Francisco",
   state: "CA",
-  zip: "94103",
-  price: 2,
-  image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495413517/tropi_goi61j.jpg",
-  lat: 37.785349,
-  lng: -122.403828,
-  phone_number: "(415) 243-0299"
+  zip: "94117",
+  price: "4",
+  image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495411029/sushi_pvilca.jpg",
+  lat: 37.776589,
+  lng: -122.438833,
+  phone_number: "(415) 655-9924"
 )
 
 b11 = Business.create!(
@@ -222,16 +222,16 @@ b14 = Business.create!(
 )
 
 b15 = Business.create!(
-  name: "Bella Trattoria",
-  address: "3854 Geary Blvd",
+  name: "El Farolito",
+  address: "2779 Mission St",
   city: "San Francisco",
   state: "CA",
-  zip: "94118",
-  price: 2,
-  image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495413136/bella_zupt4b.jpg",
-  lat: 37.781364,
-  lng: -122.460937,
-  phone_number: "(415) 221-0305"
+  zip: "94110",
+  price: 1,
+  image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495412918/348s_mi0ez3.jpg",
+  lat: 37.752656,
+  lng: -122.418103,
+  phone_number: "(415) 824-7877"
 )
 
 b16 = Business.create!(

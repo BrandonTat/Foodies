@@ -10,7 +10,7 @@ class SearchBar extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSearch = this.handleSearch.bind(this);
   }
-  
+
   componentDidMount() {
     this.props.fetchBusinesses(this.state);
   }
@@ -26,7 +26,6 @@ class SearchBar extends React.Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <form onSubmit={this.handlSearch}>
         <label id="searchbarLabel">Find:</label>

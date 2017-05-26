@@ -57,19 +57,27 @@
   letter-spacing: 1px;
 }
 
-#photos {
-  width: 30%;
-  height: 30%;
-  margin: auto auto;
-  padding: 7px;
-}
-
 #popularPhotos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   height: auto;
   width: auto;
+  align-items: center;
   justify-content: space-around;
-  margin: 0 7%;
+  margin: 0 10%;
+}
+
+#photo {
+  width: 120%;
+  height: 120%;
+  cursor: pointer;
+}
+
+#photo:hover {
+  opacity: 0.5;
+}
+
+.photoContainer {
+  margin: 0 auto;
 }
