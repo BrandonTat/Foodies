@@ -12,10 +12,7 @@ class BusinessIndex extends React.Component {
     super(props);
 
   }
-  componentDidMount() {
-    this.props.fetchBusinesses();
-  }
-
+  
   render() {
     let businesses = Object.values(this.props.businesses);
     return(

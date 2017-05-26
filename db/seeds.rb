@@ -8,6 +8,8 @@
 User.destroy_all
 Business.destroy_all
 Review.destroy_all
+Category.destroy_all
+Tag.destroy_all
 
 guest = User.create!(username: "guest", password: "password")
 u1 = User.create!(username: "Michael", password: "password")
@@ -19,6 +21,23 @@ u6 = User.create!(username: "Angela", password: "password")
 u7 = User.create!(username: "Kevin", password: "password")
 u8 = User.create!(username: "Oscar", password: "password")
 u9 = User.create!(username: "Andy", password: "password")
+
+c1 = Category.create!(category_type: "Japanese")
+c2 = Category.create!(category_type: "Asian Fusion")
+c3 = Category.create!(category_type: "Chinese")
+c4 = Category.create!(category_type: "Chicken")
+c5 = Category.create!(category_type: "Noodles")
+c6 = Category.create!(category_type: "Hot Pot")
+c7 = Category.create!(category_type: "Taiwanese")
+c8 = Category.create!(category_type: "Mexican")
+c9 = Category.create!(category_type: "Seafood")
+c10 = Category.create!(category_type: "Sandwiches")
+c11 = Category.create!(category_type: "Korean")
+c12 = Category.create!(category_type: "Italian")
+c13 = Category.create!(category_type: "American")
+c14 = Category.create!(category_type: "Burmese")
+c15 = Category.create!(category_type: "Mediterranean")
+c16 = Category.create!(category_type: "Dessert")
 
 b1 = Business.create!(
   name: "Sushirrito",
@@ -454,4 +473,77 @@ Business.all.each do |business|
     rating_review = review_array.sample
     review = Review.create!(business_id: business.id, user_id: user.id, review_text: rating_review["review"], rating: rating_review["rating"])
   end
+end
+
+array_japanese = [b1, b3, b4, b5]
+array_asian_fusion = [b1, b2, b12, b24]
+array_chinese = [b2]
+array_chicken = [b2, b17]
+array_noodles = [b3, b4]
+array_hot_pot = [b6, b7]
+array_taiwanese = [b7, b8]
+array_mexican = [b9, b10, b11, b12]
+array_seafood = [b9, b13, b14, b26]
+array_sandwiches = [b9]
+array_korean = [b12]
+array_italian = [b13, b14, b15, b16, b17, b18]
+array_american = [b19, b20, b22, b23, b27]
+array_burmese = [b21]
+array_mediterranean = [b22, b25]
+array_dessert = [b30]
+
+array_japanese.each do |business|
+  Tag.create!(business_id: business.id, category_id: c1.id)
+end
+
+array_asian_fusion.each do |business|
+  Tag.create!(business_id: business.id, category_id: c2.id)
+end
+
+array_chinese.each do |business|
+  Tag.create!(business_id: business.id, category_id: c3.id)
+end
+
+array_chicken.each do |business|
+  Tag.create!(business_id: business.id, category_id: c4.id)
+end
+
+array_noodles.each do |business|
+  Tag.create!(business_id: business.id, category_id: c5.id)
+end
+array_hot_pot.each do |business|
+  Tag.create!(business_id: business.id, category_id: c6.id)
+end
+array_taiwanese.each do |business|
+  Tag.create!(business_id: business.id, category_id: c7.id)
+end
+array_mexican.each do |business|
+  Tag.create!(business_id: business.id, category_id: c8.id)
+end
+array_seafood.each do |business|
+  Tag.create!(business_id: business.id, category_id: c9.id)
+end
+array_sandwiches.each do |business|
+  Tag.create!(business_id: business.id, category_id: c10.id)
+end
+array_korean.each do |business|
+  Tag.create!(business_id: business.id, category_id: c11.id)
+end
+array_italian.each do |business|
+  Tag.create!(business_id: business.id, category_id: c12.id)
+end
+array_american.each do |business|
+  Tag.create!(business_id: business.id, category_id: c13.id)
+end
+
+array_burmese.each do |business|
+  Tag.create!(business_id: business.id, category_id: c14.id)
+end
+
+array_mediterranean.each do |business|
+  Tag.create!(business_id: business.id, category_id: c15.id)
+end
+
+array_dessert.each do |business|
+  Tag.create!(business_id: business.id, category_id: c16.id)
 end

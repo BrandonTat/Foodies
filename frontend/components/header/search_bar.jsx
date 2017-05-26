@@ -11,6 +11,10 @@ class SearchBar extends React.Component {
     this.handleSearch = this.handleSearch.bind(this);
   }
 
+  componentDidMount() {
+    this.props.fetchBusinesses(this.state);
+  }
+
   handleChange(e) {
     this.setState({ query: e.target.value });
   }

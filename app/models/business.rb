@@ -23,11 +23,12 @@ class Business < ApplicationRecord
   validates :name, uniqueness: true
   validates :price, inclusion: { in: [1, 2, 3, 4] }
 
+  has_many :reviews
+  has_many :tags
+  
   has_many :categories,
     through: :tags,
     source: :category
-
-  has_many :reviews
 
   def self.search(query, businesses)
     processed_query = "%" + query.split.join("%") + "%"
