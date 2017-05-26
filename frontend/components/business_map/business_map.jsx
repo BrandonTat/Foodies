@@ -9,23 +9,28 @@ const mapOptions = {
 
 class BusinessMap extends React.Component{
   componentDidMount() {
-    this.map = new google.maps.Map(this.refs.map, mapOptions);
-    this.MarkerManager = new MarkerManager(this.map);
-    this.MarkerManager.updateMarkers(this.props.businesses);
+    this.renderMarkers();
 
     this.showBusiness = this.showBusiness.bind(this);
+    this.renderMarkers = this.renderMarkers.bind(this);
   }
 
   componentDidUpdate() {
+    this.renderMarkers();
     this.MarkerManager.updateMarkers(this.props.businesses);
 
     const businessIds = Object.keys(this.props.businesses);
     const markers = values(this.MarkerManager.markers);
 
-    markers.filter(marker => businessIds.includes(marker.businessId))
-    .forEach(marker => {
+    markers.forEach(marker => {
       this.showBusiness(marker);
     });
+  }
+
+  renderMarkers() {
+    this.map = new google.maps.Map(this.refs.map, mapOptions);
+    this.MarkerManager = new MarkerManager(this.map);
+    this.MarkerManager.updateMarkers(this.props.businesses);
   }
 
   showBusiness(marker) {

@@ -25,6 +25,7 @@ class BusinessIndex extends React.Component {
     // if (this.state.loading) {
     //   return (<Loading />);
     // }
+    console.log("index",this.props);
     let businesses = Object.values(this.props.businesses);
     return(
       <div id="mapPage">
