@@ -9,7 +9,8 @@
 
 #reviewForm textarea {
   border: 2px solid black;
-  text-align: center
+  text-align: center;
+  letter-spacing: 1px;
 }
 
 #reviewForm div {
@@ -28,6 +29,8 @@
   font-style: $sans;
   font-weight: bold;
   text-align: center;
+  letter-spacing: 1px;
+  color: $wild;
 }
 
 #reviewThoughts {
@@ -39,10 +42,10 @@
 #reviewForm input {
   font-size: 20px;
   padding: 5px;
-  background-color: $abisso;
+  background-color: $wild;
   border: 1px solid black;
   border-radius: 5px;
-  color: #F0EAD6;
+  color: white;
 }
 
 #reviewForm input:hover {
@@ -59,20 +62,7 @@
   font-size: 30px;
   padding: 15px;
   font-family: $sans;
-  font-weight: bold;
-}
-
-#modal {
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-family: $sans;
-  color: white;
-  background-color: $abisso;
-}
-
-#modal:hover {
-  opacity: 0.5;
+  letter-spacing: 1px;
 }
 
 #reviewErrors {
@@ -88,7 +78,7 @@
 
 #imageUpload {
   font-size: 30px;
-  margin-top: 15px; 
+  margin-top: 15px;
 }
 
 #imageUpload:hover {
@@ -100,4 +90,6 @@
   font-style: $sans;
   font-weight: bold;
   text-align: center;
+  letter-spacing: 1px;
+  color: $wild;
 }

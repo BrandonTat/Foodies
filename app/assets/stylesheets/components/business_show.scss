@@ -18,8 +18,8 @@
 #businessShowName {
   font-size: 45px;
   font-family: $sans;
-  margin: 15px 0 10px 0;
-  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 30px 0 10px 0;
 }
 
 #businessInfo {
@@ -30,4 +30,17 @@
 
 #businessShowInfo li:last-child {
   margin-bottom: 15px;
+}
+
+#modal {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: $sans;
+  color: white;
+  background-color: $wild;
+}
+
+#modal:hover {
+  opacity: 0.5;
 }
