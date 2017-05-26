@@ -15,7 +15,8 @@ class Filters extends React.Component {
 
   handlePrice(value) {
     return e => {
-      this.setState({ [value]: e.target.checked });
+      this.setState({ [value]: e.target.checked },
+      () => this.props.fetchBusinesses({price: this.state}));
     };
   }
 

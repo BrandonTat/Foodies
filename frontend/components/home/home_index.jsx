@@ -1,29 +1,32 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const p1 = "https://static.pexels.com/photos/5938/food-salad-healthy-lunch.jpg";
-const p2 = "http://res.cloudinary.com/dkdpoayma/image/upload/v1495407315/brunch_v0cewv.jpg";
-const p3 = "http://res.cloudinary.com/dkdpoayma/image/upload/v1495407314/clams_xp3lyc.jpg";
-const p4 = "http://res.cloudinary.com/dkdpoayma/image/upload/v1495407314/food-ice-cream_wvsst4.jpg";
-const p5 = "http://res.cloudinary.com/dkdpoayma/image/upload/v1495407314/grilled_chicken_hh1v42.jpg";
-const p6 = "http://res.cloudinary.com/dkdpoayma/image/upload/v1495407314/burgers_myej8b.jpg";
-const p7 = "http://res.cloudinary.com/dkdpoayma/image/upload/v1495407314/crackers_i8cweo.jpg";
-const p8 = "http://res.cloudinary.com/dkdpoayma/image/upload/v1495407314/acai_x5wveh.jpg";
-const p9 = "http://res.cloudinary.com/dkdpoayma/image/upload/v1495407314/lobster_s9v3we.jpg";
+const p1 = "https://res.cloudinary.com/dkdpoayma/image/upload/c_fill,h_350,w_350/v1495816945/food-salad-healthy-lunch_imiwrr.jpg";
+const p9 = "https://res.cloudinary.com/dkdpoayma/image/upload/c_fill,h_350,w_350/v1495407314/lobster_s9v3we.jpg";
+//bella Trattoria
 
-const PHOTOS = [p1, p2, p3, p4, p5, p6, p7, p8, p9];
+// const PHOTOS = [p1, p2, p3, p4, p5, p6, p7, p8, p9];
 
 class HomeIndex extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount() {
+    this.props.fetchBusinesses();
+  }
 
   render() {
-    return (
-      <div>
-        <ul id="popularPhotos">
-          {PHOTOS.map(photo =>
-              <img key={photo} id="photos" src={photo}/>
-          )}
-        </ul>
-      </div>
-    );
+    return (<div></div>);
+  //   return (
+  //     <div>
+  //       <ul id="popularPhotos">
+  //         {PHOTOS.map(photo =>
+  //             <img key={photo} id="photos" src={photo}/>
+  //         )}
+  //       </ul>
+  //     </div>
+  //   );
   }
 }
 

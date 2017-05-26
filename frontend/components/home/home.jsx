@@ -13,8 +13,8 @@ class Home extends React.Component {
     return (
       <div id="homepage">
         <HeaderContainer {...this.props}/>
-        <div id="upperHomepage">
 
+        <div id="upperHomepage">
           <div id="quote">
             <h1>
               "There's no better feeling in the world than a warm pizza
@@ -33,7 +33,7 @@ class Home extends React.Component {
         </div>
 
         <div id="lowerHomepage">
-          <label id="popular"> <HomeIndex /> </label>
+          <label id="popular"> <HomeIndex {...this.props}/> </label>
         </div>
       </div>
     );
@@ -41,3 +41,5 @@ class Home extends React.Component {
 }
 
 export default Home;
+
+  // <HeaderContainer {...this.props}/>

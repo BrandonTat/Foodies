@@ -25,7 +25,7 @@ class Business < ApplicationRecord
 
   has_many :reviews
   has_many :tags
-  
+
   has_many :categories,
     through: :tags,
     source: :category

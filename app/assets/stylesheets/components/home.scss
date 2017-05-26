@@ -50,7 +50,7 @@
   text-align: center;
   font-size: 40px;
   font-family: $sans;
-  color: $abisso;
+  color: black;
   margin: 25px auto 0 auto;
   height: 100%;
   width: 100%;
@@ -58,9 +58,10 @@
 }
 
 #photos {
-  width: 33%;
-  height: 33%;
-  margin: 0 auto;
+  width: 30%;
+  height: 30%;
+  margin: auto auto;
+  padding: 7px;
 }
 
 #popularPhotos {

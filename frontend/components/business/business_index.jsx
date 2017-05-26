@@ -12,7 +12,7 @@ class BusinessIndex extends React.Component {
     super(props);
 
   }
-  
+
   render() {
     let businesses = Object.values(this.props.businesses);
     return(
@@ -34,4 +34,7 @@ class BusinessIndex extends React.Component {
   }
 }
 
+
 export default BusinessIndex;
+
+  // <HeaderContainer {...this.props} />

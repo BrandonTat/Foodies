@@ -21,7 +21,8 @@ class Header extends React.Component {
 
   render() {
     if (!this.props.currentUser) {
-      return this.redirectLogin();
+      return (<div></div>);
+      // return this.redirectLogin();
     }
     return (
       <div id="header">
@@ -34,7 +35,7 @@ class Header extends React.Component {
             <i className="fa fa-linkedin" aria-hidden="true"></i>
           </a>
         </div>
-        < SearchBar {...this.props}/>
+        <SearchBar {...this.props}/>
       <button onClick={this.handleLogout}>Log Out</button>
       </div>
     );

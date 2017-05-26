@@ -4,8 +4,9 @@ import { logout } from '../../actions/session_actions';
 import { fetchBusinesses } from '../../actions/business_actions';
 import Home from './home';
 
-const mapStateToProps = ({ session }) => ({
-  currentUser: session.currentUser
+const mapStateToProps = (state) => ({
+  currentUser: state.session.currentUser,
+  businesses: state.businesses
 });
 
 const mapDispatchToProps = dispatch => ({

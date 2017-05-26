@@ -8,10 +8,14 @@ import SessionFormContainer from './session_form/session_form_container';
 import HomeContainer from './home/home_container';
 import SearchContainer from './business/search_container';
 import BusinessShowContainer from './business_show/business_show_container';
+
+// import HeaderContainer from './header/header_container';
+
 import { AuthRoute } from '../util/route_util';
 
 const App = () => (
   <div id="main">
+
     <Switch>
       <AuthRoute path="/login" component={SessionFormContainer} />
       <AuthRoute exact path="/" component={SessionFormContainer} />
@@ -24,3 +28,5 @@ const App = () => (
 );
 
 export default App;
+
+  // <Route path="/" component={HeaderContainer} />
