@@ -28,11 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.fetchBusinesses = fetchBusinesses;
   window.fetchBusiness = fetchBusiness;
   window.fetchReviews = fetchReviews;
-  // store.dispatch(fetchReviews(121)).then(console.log);
 
   Modal.setAppElement(document.body);
   ReactDOM.render(<Root store={ store }/>, root);
 });
-
-// GOOG API KEY
-// AIzaSyBtYHes9Jjfhvm90H5eoxHKn7zfDbsDPWI

@@ -14,7 +14,6 @@ class ReviewIndexItem extends React.Component {
   }
 
   render() {
-    // console.log(this.props.review);
     const {user, review_text, rating, photo_url} = this.props.review;
     let deleteReview;
     if (this.props.currentUser.id === this.props.review.user.id) {

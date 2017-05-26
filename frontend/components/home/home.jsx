@@ -10,7 +10,6 @@ class Home extends React.Component {
   }
 
   render() {
-    console.log("home",this.props);
     return (
       <div id="homepage">
         <HeaderContainer {...this.props}/>
@@ -18,11 +17,12 @@ class Home extends React.Component {
 
           <div id="quote">
             <h1>
-              You miss 100% of the shots you don't take.
+              "There's no better feeling in the world than a warm pizza
+              box on your lap"
             </h1>
 
             <h1>
-              - Michael Scott
+              - Kevin James
             </h1>
           </div>
 

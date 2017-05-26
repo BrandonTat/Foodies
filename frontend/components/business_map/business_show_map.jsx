@@ -20,7 +20,6 @@ class BusinessShowMap extends React.Component {
       position: location,
       map: this.map,
       animation: google.maps.Animation.DROP
-      //BOUNCE
     });
 
     let business = nextProps.business;
