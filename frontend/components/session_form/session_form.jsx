@@ -50,16 +50,21 @@ class SessionForm extends React.Component {
 
   render() {
     let header;
+    let submit;
+
     if (this.props.formType === 'login'){
       header = "Log In";
+      submit = "Log In";
     } else {
       header = "Become a Foodie";
+      submit = "Sign Up";
     }
+
     return(
       <div id="login">
         <div id="welcomeHeader">
           <h1 id="headerLogin">Foodies</h1>
-          <h2 id="description"> - Food Search Engine</h2>
+          <h2 id="description"> - Never get hangry again</h2>
         </div>
 
         <div id="session-form">
@@ -83,7 +88,7 @@ class SessionForm extends React.Component {
               />
 
               <div id="buttons">
-                <button type="submit">Submit</button>
+                <button type="submit">{submit}</button>
                 {this.navLink()}
                 <button onClick={this.guestLogIn}>Guest Log In</button>
               </div>
