@@ -24,8 +24,9 @@ class SearchBar extends React.Component {
   render() {
     return (
       <form onSubmit={this.handlSearch}>
-        <label>Find:</label>
+        <label id="searchbarLabel">Find:</label>
         <input
+          id="searchbarInput"
           value = {this.state.query}
           placeholder = "Tacos, burgers, etc."
           onChange = {this.handleChange}

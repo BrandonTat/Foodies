@@ -25,9 +25,17 @@ class Header extends React.Component {
     }
     return (
       <div id="header">
-        <Link to="/home">Home</Link>
+        <div id="headerLinks">
+          <Link id="homeLink" to="/home">Foodies</Link>
+          <a id="github" href="https://github.com/BrandonTat/yelp_clone">
+            <i className="fa fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/brandon-tat-300815120/">
+            <i className="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </div>
         < SearchBar {...this.props}/>
-        <button onClick={this.handleLogout}>Log Out</button>
+      <button onClick={this.handleLogout}>Log Out</button>
       </div>
     );
   }
