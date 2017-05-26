@@ -19,9 +19,11 @@ class BusinessMap extends React.Component{
   componentDidUpdate() {
     this.MarkerManager.updateMarkers(this.props.businesses);
 
+    const businessIds = Object.keys(this.props.businesses);
     const markers = values(this.MarkerManager.markers);
 
-    markers.forEach(marker => {
+    markers.filter(marker => businessIds.includes(marker.businessId))
+    .forEach(marker => {
       this.showBusiness(marker);
     });
   }

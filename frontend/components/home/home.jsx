@@ -1,6 +1,6 @@
 import React from 'react';
 
-import HeaderContainer from '../header/header';
+import HeaderContainer from '../header/header_container';
 import HomeIndex from './home_index';
 import { Redirect } from 'react-router-dom';
 

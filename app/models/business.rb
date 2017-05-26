@@ -28,4 +28,9 @@ class Business < ApplicationRecord
     source: :category
 
   has_many :reviews
+
+  def self.search(query, businesses)
+    processed_query = "%" + query.split.join("%") + "%"
+    businesses.where("name ILIKE :query", query: processed_query)
+  end
 end

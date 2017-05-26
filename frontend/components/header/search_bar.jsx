@@ -4,38 +4,36 @@ class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      option: ""
+      query: ""
     };
 
-    this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSearch = this.handleSearch.bind(this);
   }
 
   handleChange(e) {
-    this.setState({ option: e.target.value });
-  }
-
-  handleSubmit(e) {
-    e.preventDefault();
+    this.setState({ query: e.target.value });
   }
 
   handleSearch(e) {
     e.preventDefault();
+    this.props.fetchBusinesses(this.state);
     this.props.history.push('/businesses');
   }
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handlSearch}>
         <label>Find:</label>
         <input
-          value = {this.state.option}
+          value = {this.state.query}
           placeholder = "Tacos, burgers, etc."
           onChange = {this.handleChange}
         />
 
-      <button onClick={this.handleSearch}><i className="fa fa-search"></i></button>
+      <button onClick={this.handleSearch}>
+        <i className="fa fa-search"></i>
+      </button>
       </form>
   );
   }

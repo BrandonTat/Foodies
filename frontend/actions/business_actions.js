@@ -19,8 +19,8 @@ export const fetchBusiness = id => dispatch => (
   ))
 );
 
-export const fetchBusinesses = () => dispatch => (
-  APIUtil.fetchBusinesses().then(businesses => (
+export const fetchBusinesses = (params) => dispatch => (
+  APIUtil.fetchBusinesses(params).then(businesses => (
     dispatch(receiveBusinesses(businesses))
   ))
 );
