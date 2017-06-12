@@ -36,7 +36,7 @@ class SearchBar extends React.Component {
           onChange = {this.handleChange}
         />
 
-      <button onClick={this.handleSearch}>
+      <button className="link" onClick={this.handleSearch}>
         <i className="fa fa-search"></i>
       </button>
       </form>

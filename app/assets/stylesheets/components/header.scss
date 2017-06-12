@@ -9,22 +9,16 @@
   letter-spacing: 2px;
 
   color: white;
-  background-color: $wild;
+  background-color: $red;
 }
 
 #header button {
   margin-right: 30px;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 #homeLink {
   margin: auto 0;
-  font-size: 150%;
-}
-
-#header button:hover{
-  cursor: pointer;
-  color: white;
 }
 
 #searchbarLabel {
@@ -33,7 +27,7 @@
 
 #searchbarInput {
   width: 210px;
-  margin-right: 5px;
+  margin-right: 15px;
   border-bottom: 1px solid white;
   font-size: 90%;
 }
@@ -41,4 +35,14 @@
 #headerLinks a {
   padding-left: 18px;
   font-size: 1.5em;
+}
+
+.link:hover {
+  border-bottom: 2px solid white;
+  cursor: pointer;
+  color: white;
+}
+
+input::placeholder {
+  color: $light_gray;
 }
