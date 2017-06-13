@@ -20,7 +20,7 @@ class HomeIndex extends React.Component {
       <ul id="popularPhotos">
         {featured.map(business =>
           <FeaturedBusiness key={business.id} business={business} {...this.props}/>
-        )};
+        )}
       </ul>
     );
   }
