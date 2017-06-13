@@ -50,6 +50,7 @@
   text-align: center;
   font-size: 30px;
   font-family: $sans;
+  font-weight: bolder;
   color: $red;
   margin: 1em auto 1em auto;
   height: 100%;
@@ -65,36 +66,4 @@
   align-items: center;
   justify-content: space-around;
   margin: 0 13%;
-}
-
-#photo {
-  width: 100%;
-  height: 75%;
-  cursor: pointer;
-}
-
-#photo:hover {
-  opacity: 0.5;
-}
-
-.photoContainer {
-  margin: 0 auto;
-  padding: 10px;
-}
-
-#businessCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 350px;
-  width: 300px;
-  border: 1px solid $card_border;
-  border-radius: 4px;
-}
-
-#businessCardContent {
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 10px;
 }

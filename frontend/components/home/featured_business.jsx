@@ -1,6 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+const PRICE = {
+  1: "$",
+  2: "$$",
+  3: "$$$",
+  4: "$$$$"
+};
+
 class FeaturedBusiness extends React.Component {
   constructor(props) {
     super(props);
@@ -16,13 +23,14 @@ class FeaturedBusiness extends React.Component {
 
   render() {
     const {business} = this.props;
-
     return (
       <li className="photoContainer" onClick={this.handleClick} id={business.id}>
         <div id="businessCard">
           <img id="photo" src={business.image_url} />
           <div id="businessCardContent">
-            <text>{business.name}</text>
+            <text id="title">{business.name}</text>
+            <text>{business.address}, {business.city}</text>
+            <text>{PRICE[business.price]}</text>
           </div>
         </div>
       </li>
