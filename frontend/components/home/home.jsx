@@ -17,8 +17,7 @@ class Home extends React.Component {
         <div id="upperHomepage">
           <div id="quote">
             <h1>
-              "There's no better feeling in the world than a warm pizza
-              box on your lap"
+              "There's no better feeling in the world than a warm pizza box on your lap"
             </h1>
 
             <h1>
@@ -29,7 +28,7 @@ class Home extends React.Component {
         </div>
 
         <div id="midHomepage">
-          <h2 id="trending">Hot and New</h2>
+          <h2 id="trending">Hot & New Business</h2>
         </div>
 
         <div id="lowerHomepage">
@@ -41,5 +40,3 @@ class Home extends React.Component {
 }
 
 export default Home;
-
-  // <HeaderContainer {...this.props}/>

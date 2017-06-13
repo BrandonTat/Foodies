@@ -19,7 +19,12 @@ class FeaturedBusiness extends React.Component {
 
     return (
       <li className="photoContainer" onClick={this.handleClick} id={business.id}>
-        <img id="photo" src={business.image_url} />
+        <div id="businessCard">
+          <img id="photo" src={business.image_url} />
+          <div id="businessCardContent">
+            <text>{business.name}</text>
+          </div>
+        </div>
       </li>
     );
   }
