@@ -1,8 +1,6 @@
 #reviewIndex {
   display: flex;
   flex-direction: column;
-
-  // border: 5px solid blue;
 }
 
 #reviewHeader {
@@ -47,6 +45,13 @@
   font-size: 20px;
   font-family: $sans;
   padding: 10px 0;
+}
+
+#removeReview {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid black;
+  justify-content: flex-end;
 }
 
 #reviewPhoto {

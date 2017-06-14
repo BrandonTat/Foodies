@@ -47,28 +47,37 @@ class BusinessShow extends React.Component{
         <div id="businessShow">
           <HeaderContainer {...this.props} />
           <BusinessShowMap business={this.props.business} />
-          <ul id="businessShowInfo">
-            <li id="businessShowName">{name}</li>
-            <li id="businessInfo">{address}, {city}, {state}, {zip}</li>
-            <li id="businessInfo">{reviews.length} Reviews || {PRICES[price]}</li>
-            <li id="businessInfo">{phone_number}</li>
+          <div id="businessShowUpper">
+            <ul id="businessShowInfo">
 
-              <button id="modal" onClick={this.openModal}>Post Review</button>
-              <Modal
-                isOpen={this.state.modalIsOpen}
-                onRequestClose={this.closeModal}
-                style={ModalStyle}
-                contentLabel="example Modal"
-              >
-                <ReviewForm {...this.props}
-                  closeModal={this.closeModal}/>
-              </Modal>
-          </ul>
+              <div id="upperBusinessInfo">
+                <li id="businessShowName">{name}</li>
+                <li id="businessInfo">{address}</li>
+                <li id="businessInfo">{city}, {state}, {zip}</li>
+                <li id="businessInfo">{reviews.length} Reviews || {PRICES[price]}</li>
+                <li id="businessInfo">{phone_number}</li>
+              </div>
 
-          <div id="infoSection">
+              <div id="half">
+                <button id="modal" onClick={this.openModal}>Write a Review</button>
+              </div>
+            </ul>
+          </div>
+
+          <div id="businessShowBottom">
             <ReviewIndexContainer {...this.props}/>
             <h1 id="businessHours">BusinessHours</h1>
           </div>
+
+
+          <Modal
+            isOpen={this.state.modalIsOpen}
+            onRequestClose={this.closeModal}
+            style={ModalStyle}
+            contentLabel="example Modal">
+            <ReviewForm {...this.props}
+              closeModal={this.closeModal}/>
+          </Modal>
         </div>
       );
     }

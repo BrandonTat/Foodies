@@ -17,7 +17,7 @@ class ReviewIndexItem extends React.Component {
     const {user, review_text, rating, photo_url} = this.props.review;
     let deleteReview;
     if (this.props.currentUser.id === this.props.review.user.id) {
-      deleteReview = <button onClick={this.handleDelete}>
+      deleteReview = <button id="removeReview" onClick={this.handleDelete}>
         Remove Review
       </button>;
     } else {
@@ -38,10 +38,10 @@ class ReviewIndexItem extends React.Component {
           </li>
           <li id="reviewUsername">{user.username}</li>
           <li id="reviewText">{review_text}</li>
+          {deleteReview}
         </div>
 
         <img id="reviewPhoto" src={photo_url}></img>
-        {deleteReview}
       </ul>
     );
   }
