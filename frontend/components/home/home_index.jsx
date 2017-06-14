@@ -16,6 +16,8 @@ class HomeIndex extends React.Component {
       featured = featured.slice(0, 9);
     }
 
+
+
     return (
       <ul id="popularPhotos">
         {featured.map(business =>

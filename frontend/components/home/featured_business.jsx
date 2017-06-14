@@ -23,6 +23,7 @@ class FeaturedBusiness extends React.Component {
 
   render() {
     const {business} = this.props;
+
     return (
       <li className="photoContainer" onClick={this.handleClick} id={business.id}>
         <div id="businessCard">

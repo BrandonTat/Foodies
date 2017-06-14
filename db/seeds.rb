@@ -468,10 +468,11 @@ business_array = [
 
 Business.all.each do |business|
 
-  50.times do |i|
+  (5..10).to_a.sample.times do |i|
     user = user_array.sample
     rating_review = review_array.sample
-    review = Review.create!(business_id: business.id, user_id: user.id, review_text: rating_review["review"], rating: rating_review["rating"])
+    photo = business_array.sample.image_url
+    review = Review.create!(business_id: business.id, user_id: user.id, review_text: rating_review["review"], rating: rating_review["rating"], photo_url: photo)
   end
 end
 
