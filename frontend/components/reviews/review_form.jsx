@@ -37,7 +37,7 @@ class ReviewForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    let business_id = this.props.business.id;
+    let business_id = this.props.businessId;
     let user_id = this.props.currentUser.id;
     let { review_text, rating, photo_url } = this.state;
 

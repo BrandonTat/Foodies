@@ -1,20 +1,56 @@
+#reviewIndex {
+  display: flex;
+  flex-direction: column;
+
+  // border: 5px solid blue;
+}
+
+#reviewHeader {
+  font-size: 30px;
+  font-family: $sans;
+  font-weight: bolder;
+  color: $red;
+  padding: 15px;
+}
+
 #review {
   display: flex;
-  align-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-  padding: 20px 0;
+  flex-direction: row;
+  justify-content: space-between;
   min-width: 40%;
+  width: 90%;
+  height: auto;
+  padding: 20px 15px;
+  border-bottom: 1px solid $card_border;
+}
+
+#reviewInfo {
+  width: 100%;
+}
+
+#reviewRating {
+  font-size: 20px;
+  font-family: $sans;
+}
+
+#ratingStars {
+  color: $red;
 }
 
 #reviewText {
-  font-size: 20px;
-  font-style: $sans;
+  font-size: 15px;
+  font-family: $sans;
   width: 80%;
-  text-align: center;
 }
 
-#username {
-  font-size: 25px;
+#reviewUsername {
+  font-size: 20px;
+  font-family: $sans;
+  padding: 10px 0;
+}
+
+#reviewPhoto {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }

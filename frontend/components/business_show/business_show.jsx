@@ -4,11 +4,28 @@ import HeaderContainer from '../header/header_container';
 import BusinessShowMap from '../business_map/business_show_map';
 import ReviewIndexContainer from '../reviews/review_index_container';
 
+import ReviewForm from '../reviews/review_form';
+import Modal from 'react-modal';
+import ModalStyle from '../modal_style';
+
 const PRICES = { 1:"$", 2:"$$", 3:"$$$", 4:"$$$$"};
 
 class BusinessShow extends React.Component{
   constructor(props) {
     super(props);
+
+    this.state = {modalIsOpen: false};
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+  }
+
+  openModal() {
+    this.setState({modalIsOpen: true});
+  }
+
+  closeModal() {
+    this.props.clearErrors();
+    this.setState({modalIsOpen: false});
   }
 
   componentWillMount() {
@@ -35,9 +52,23 @@ class BusinessShow extends React.Component{
             <li id="businessInfo">{address}, {city}, {state}, {zip}</li>
             <li id="businessInfo">{reviews.length} Reviews || {PRICES[price]}</li>
             <li id="businessInfo">{phone_number}</li>
+
+              <button id="modal" onClick={this.openModal}>Post Review</button>
+              <Modal
+                isOpen={this.state.modalIsOpen}
+                onRequestClose={this.closeModal}
+                style={ModalStyle}
+                contentLabel="example Modal"
+              >
+                <ReviewForm {...this.props}
+                  closeModal={this.closeModal}/>
+              </Modal>
           </ul>
 
-          <ReviewIndexContainer {...this.props}/>
+          <div id="infoSection">
+            <ReviewIndexContainer {...this.props}/>
+            <h1 id="businessHours">BusinessHours</h1>
+          </div>
         </div>
       );
     }

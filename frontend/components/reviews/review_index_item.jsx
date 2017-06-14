@@ -25,20 +25,24 @@ class ReviewIndexItem extends React.Component {
     }
 
     return(
-      <div id="reviewItems">
-        <ul id="review">
-          <Rating
+      <ul id="review">
+        <div id="reviewInfo">
+          <li id="reviewRating">
+            Rating: <Rating
+            id="ratingStars"
             initialRate={rating}
-            empty="fa fa-star-o fa-2x"
-            full="fa fa-star fa-2x"
+            empty="fa fa-star-o fa"
+            full="fa fa-star fa"
             readonly
             />
+          </li>
+          <li id="reviewUsername">{user.username}</li>
           <li id="reviewText">{review_text}</li>
-          <li id="username"> - {user.username}</li>
-          <img src={photo_url}></img>
-          {deleteReview}
-        </ul>
-      </div>
+        </div>
+
+        <img id="reviewPhoto" src={photo_url}></img>
+        {deleteReview}
+      </ul>
     );
   }
 }
