@@ -55,6 +55,13 @@ class ReviewForm extends React.Component {
   }
 
   render() {
+    let upload;
+    if (this.state.photo_url.length > 1) {
+      upload = <i className="fa fa-check" aria-hidden="true"></i>;
+    } else {
+      upload = <i className="fa fa-cloud-upload" aria-hidden="true"></i>;
+    }
+
     return(
       <form id="reviewForm" onSubmit={this.handleSubmit}>
         <div id="rating">
@@ -83,7 +90,7 @@ class ReviewForm extends React.Component {
         <label id="imageIcon">Upload an image</label>
         <label id="imageIcon">(optional, max 1)</label>
         <button id="imageUpload" onClick={this.upload}>
-          <i className="fa fa-cloud-upload" aria-hidden="true"></i>
+          {upload}
         </button>
 
         <div id="reviewErrors">

@@ -93,6 +93,7 @@ class BusinessShow extends React.Component{
             isOpen={this.state.modalIsOpen}
             onRequestClose={this.closeModal}
             style={ModalStyle}
+            className="modal"
             contentLabel="example Modal">
             <ReviewForm {...this.props}
               closeModal={this.closeModal}/>

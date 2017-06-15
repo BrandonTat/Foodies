@@ -11,6 +11,7 @@
   border: 2px solid black;
   text-align: center;
   letter-spacing: 1px;
+  height: 300px;
 }
 
 #reviewForm div {
@@ -26,11 +27,11 @@
 #imageLabels {
   font-size: 25px;
   margin: 15px;
-  font-style: $sans;
+  font-family: $sans;
   font-weight: bold;
   text-align: center;
   letter-spacing: 1px;
-  color: $wild;
+  color: $red;
 }
 
 #reviewThoughts {
@@ -42,7 +43,8 @@
 #reviewForm input {
   font-size: 20px;
   padding: 5px;
-  background-color: $wild;
+  background-color: $red;
+  height: 35px;
   border: 1px solid black;
   border-radius: 5px;
   color: white;
@@ -74,9 +76,15 @@
 
 #imageIcon {
   font-size: 25px;
-  font-style: $sans;
+  font-family: $sans;
   font-weight: bold;
   text-align: center;
   letter-spacing: 1px;
-  color: $wild;
+  color: $red;
+}
+
+.modal {
+  margin: auto;
+  height: 80%;
+  width: 50%
 }

@@ -30,6 +30,11 @@
   width: 100%;
 }
 
+#reviewTop {
+  display: flex;
+  flex-direction: row;
+}
+
 #reviewRating {
   font-size: 20px;
   font-family: $sans;
@@ -53,9 +58,18 @@
 
 #removeReview {
   display: flex;
-  flex-direction: column;
-  border: 5px solid black;
-  justify-content: flex-end;
+  flex-direction: row;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: $red;
+  color: white;
+  height: 25px;
+  width: 120px;
+  margin-left: 20px;
+}
+
+#deleteText {
+  margin: auto;
 }
 
 #reviewPhoto {

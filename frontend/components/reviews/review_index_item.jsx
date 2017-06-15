@@ -18,30 +18,41 @@ class ReviewIndexItem extends React.Component {
     let deleteReview;
     if (this.props.currentUser.id === this.props.review.user.id) {
       deleteReview = <button id="removeReview" onClick={this.handleDelete}>
-        Remove Review
+        <text id="deleteText">Delete Review</text>
       </button>;
     } else {
       deleteReview = <p></p>;
     }
 
+    let photo;
+
+    if (photo_url == "") {
+      photo = <p></p>;
+    } else {
+      photo = <img id="reviewPhoto" src={photo_url}></img>;
+    }
+
     return(
       <ul id="review">
         <div id="reviewInfo">
-          <li id="reviewRating">
-            Rating: <Rating
-            id="ratingStars"
-            initialRate={rating}
-            empty="fa fa-star-o fa"
-            full="fa fa-star fa"
-            readonly
-            />
+          <div id="reviewTop">
+            <li id="reviewRating">
+              Rating: <Rating
+              id="ratingStars"
+              initialRate={rating}
+              empty="fa fa-star-o fa"
+              full="fa fa-star fa"
+              readonly
+              />
           </li>
+          {deleteReview}
+          </div>
+
           <li id="reviewUsername">{user.username}</li>
           <li id="reviewText">{review_text}</li>
-          {deleteReview}
         </div>
 
-        <img id="reviewPhoto" src={photo_url}></img>
+        {photo}
       </ul>
     );
   }
