@@ -37,6 +37,20 @@ class Business < ApplicationRecord
     through: :tags,
     source: :category
 
+  def averageRating
+    reviews = self.reviews
+    sum = 0
+    reviews.each do |review|
+      sum += review.rating
+    end
+
+    self.reviews.empty? ? 0 : (sum/self.reviews.length).floor
+  end
+
+  def numReviews
+    self.reviews.length
+  end
+
   def self.search(query, businesses)
     processed_query = "%" + query.split.join("%") + "%"
     businesses.where("name ILIKE :query", query: processed_query)

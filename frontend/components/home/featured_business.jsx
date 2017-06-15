@@ -1,4 +1,5 @@
 import React from 'react';
+import Rating from 'react-rating';
 import { Link } from 'react-router-dom';
 
 const PRICE = {
@@ -30,8 +31,18 @@ class FeaturedBusiness extends React.Component {
           <img id="photo" src={business.image_url} />
           <div id="businessCardContent">
             <text id="title">{business.name}</text>
-            <text>{business.address}, {business.city}</text>
-            <text>{PRICE[business.price]}</text>
+            <text id="featuredRating">
+              <Rating
+              id="reviewStars"
+              initialRate={business.averageRating}
+              empty="fa fa-star-o fa"
+              full="fa fa-star fa"
+              readonly
+              />
+
+            </text>
+            <text id="numReviews">{business.numReviews} Ratings</text>
+            <text id="price">{PRICE[business.price]}</text>
           </div>
         </div>
       </li>

@@ -35,6 +35,7 @@ class BusinessShow extends React.Component{
   }
 
   render() {
+    console.log(this.props);
     let {
       name, address, city, state,
       zip, price, phone_number, mon,

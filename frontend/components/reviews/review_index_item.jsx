@@ -44,7 +44,7 @@ class ReviewIndexItem extends React.Component {
               full="fa fa-star fa"
               readonly
               />
-          </li>
+            </li>
           {deleteReview}
           </div>
 
