@@ -78,6 +78,38 @@
 }
 
 #businessHours {
-  border: 5px solid black;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
   width: 70%;
+  padding: 15px 0 0 15px;
+}
+
+#hoursHeader {
+  font-size: 30px;
+  font-family: $sans;
+  font-weight: bolder;
+  color: $red;
+  padding-bottom: 15px;
+}
+
+#schedule {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 20%;
+  padding-top: 20px;
+}
+
+#week {
+  padding-top: 2px;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: $sans;
+}
+
+#day {
+  font-size: 15px;
+  font-family: $sans;
+  margin: 5px 0;
 }

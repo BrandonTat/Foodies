@@ -49,6 +49,13 @@ b1 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/c_fill,h_350,w_350/v1495816945/food-salad-healthy-lunch_imiwrr.jpg",
   lat: 37.785349,
   lng: -122.403828,
+  mon: "10:00 am - 10:00 pm",
+  tue: "10:00 am - 10:00 pm",
+  wed: "10:00 am - 10:00 pm",
+  thu: "10:00 am - 10:30 pm",
+  fri: "10:00 am - 10:30 pm",
+  sat: "11:00 am - 10:30 pm",
+  sun: "11:00 am - 10:00 pm",
   phone_number: "(415) 243-0299"
 )
 
@@ -62,6 +69,13 @@ b2 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/c_fill,h_350,w_350/v1495407315/brunch_v0cewv.jpg",
   lat: 37.774901,
   lng: -122.437509,
+  mon: "5:00 pm - 12:00 am",
+  tue: "5:00 pm - 12:00 am",
+  wed: "5:00 pm - 12:00 am",
+  thu: "5:00 pm - 12:00 am",
+  fri: "5:00 pm - 1:00 am",
+  sat: "11:00 am - 1:00 am",
+  sun: "11:00 am - 12:00 am",
   phone_number: "(415) 864-8643"
 )
 
@@ -75,6 +89,13 @@ b3 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/c_fill,h_350,q_80,w_350/v1495413276/pexels-photo-106185_drcvph.jpg",
   lat: 37.798125,
   lng: -122.407543,
+  mon: "11:30 am - 10:00 pm",
+  tue: "11:30 am - 10:00 pm",
+  wed: "11:30 am - 10:00 pm",
+  thu: "11:30 am - 10:00 pm",
+  fri: "11:30 am - 10:00 pm",
+  sat: "11:30 am - 10:00 pm",
+  sun: "11:30 am - 10:00 pm",
   phone_number: "(415) 781-7673"
 )
 
@@ -88,6 +109,13 @@ b4 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/c_fill,h_350,w_350/v1495407314/food-ice-cream_wvsst4.jpg",
   lat: 37.761623,
   lng: -122.425742,
+  mon: "11:00am - 10:00pm",
+  tue: "11:00am - 10:00pm",
+  wed: "11:00am - 10:00pm",
+  thu: "11:00am - 10:00pm",
+  fri: "11:00am - 10:00pm",
+  sat: "11:00am - 10:00pm",
+  sun: "11:00am - 10:00pm",
   phone_number: "(415) 626-5600"
 )
 
@@ -101,6 +129,13 @@ b5 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/c_fill,h_350,w_350/v1495410662/sushiritto_csfel9.jpg",
   lat: 37.788139,
   lng: -122.401021,
+  mon: "11:00 am - 4:00 pm",
+  tue: "11:00 am - 4:00 pm",
+  wed: "11:00 am - 4:00 pm",
+  thu: "11:00 am - 4:00 pm",
+  fri: "11:00 am - 4:00 pm",
+  sat: "Closed",
+  sun: "Closed",
   phone_number: "(415) 495-7655"
 )
 
@@ -114,6 +149,13 @@ b6 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/c_fill,h_350,w_350/v1495412572/pexels-photo-70497_xcrruw.jpg",
   lat: 37.786967,
   lng: -122.403995,
+  mon: "8:00 am - 11:00 pm",
+  tue: "8:00 am - 11:00 pm",
+  wed: "8:00 am - 11:00 pm",
+  thu: "8:00 am - 11:30 pm",
+  fri: "8:00 am - 11:30 pm",
+  sat: "10:30 am - 11:30 pm",
+  sun: "10:30 am - 10:00 pm",
   phone_number: "(415) 538-3437"
 )
 
@@ -127,6 +169,13 @@ b7 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/c_fill,h_350,w_350/v1495411483/pizza2_f81pvn.jpg",
   lat: 37.777529,
   lng: -122.438003,
+  mon: "5:00 pm - 9:30 pm",
+  tue: "5:00 pm - 9:30 pm",
+  wed: "5:00 pm - 9:30 pm",
+  thu: "5:00 pm - 9:30 pm",
+  fri: "4:00 pm - 10:30 pm",
+  sat: "3:00 pm - 10:30 pm",
+  sun: "3:00 pm - 9:30 pm",
   phone_number: "(415) 441-1118"
 )
 
@@ -140,6 +189,13 @@ b8 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/c_fill,h_350,w_350/v1495410886/udon_w2tvjf.jpg",
   lat: 37.785046,
   lng: -122.432093,
+  mon: "11:30 am - 3:00 pm, 5:30 pm - 9:30 pm",
+  tue: "11:30 am - 3:00 pm, 5:30 pm - 9:30 pm",
+  wed: "11:30 am - 3:00 pm, 5:30 pm - 9:30 pm",
+  thu: "11:30 am - 3:00 pm, 5:30 pm - 9:30 pm",
+  fri: "11:30 am - 3:00 pm, 5:30 pm - 9:30 pm",
+  sat: "11:30 am - 3:00 pm, 5:00 pm - 9:30 pm",
+  sun: "11:30 am - 3:00 pm, 5:00 pm - 9:00 pm",
   phone_number: "(415) 931-3118"
 )
 
@@ -153,6 +209,13 @@ b9 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/c_fill,h_350,w_350/v1495407314/lobster_s9v3we.jpg",
   lat: 37.781364,
   lng: -122.460937,
+  mon: "5:00 pm - 9:30 pm",
+  tue: "5:00 pm - 9:30 pm",
+  wed: "5:00 pm - 9:30 pm",
+  thu: "5:00 pm - 9:30 pm",
+  fri: "12:00 pm - 3:00 pm, 5:00 pm - 10:30 pm",
+  sat: "5:00 pm - 10:30 pm",
+  sun: "12:00 pm - 9:00 pm",
   phone_number: "(415) 221-0305"
 )
 
@@ -166,6 +229,13 @@ b10 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495411029/sushi_pvilca.jpg",
   lat: 37.776589,
   lng: -122.438833,
+  mon: "6:00 pm - 10:30 pm ",
+  tue: "6:00 pm - 10:30 pm ",
+  wed: "6:00 pm - 10:30 pm ",
+  thu: "6:00 pm - 10:30 pm ",
+  fri: "6:00 pm - 10:30 pm ",
+  sat: "6:00 pm - 10:30 pm ",
+  sun: "6:00 pm - 10:30 pm ",
   phone_number: "(415) 655-9924"
 )
 
@@ -179,6 +249,13 @@ b11 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495413442/don_oihwwv.jpg",
   lat: 37.800742,
   lng: -122.407954,
+  mon: "5:30 pm - 11:00 pm",
+  tue: "5:30 pm - 11:00 pm",
+  wed: "5:30 pm - 11:00 pm",
+  thu: "5:30 pm - 11:00 pm",
+  fri: "5:30 pm - 11:00 pm",
+  sat: "11:00 am - 11:00 pm",
+  sun: "10:00 am - 10:00 pm",
   phone_number: "(415) 395-0939"
 )
 
@@ -192,6 +269,13 @@ b12 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495413380/tacorea_jipqnd.jpg",
   lat: 37.789745,
   lng: -122.410579,
+  mon: "11:30 am - 3:00 pm, 6:00 pm - 9:00 pm",
+  tue: "11:30 am - 3:00 pm, 6:00 pm - 9:00 pm",
+  wed: "11:30 am - 3:00 pm, 6:00 pm - 9:00 pm",
+  thu: "11:30 am - 3:00 pm, 6:00 pm - 9:00 pm",
+  fri: "11:30 am - 3:00 pm, 6:00 pm - 9:00 pm",
+  sat: "11:30 am - 3:00 pm, 6:00 pm - 9:00 pm",
+  sun: "11:30 am - 3:00 pm, 6:00 pm - 9:00 pm",
   phone_number: "(415) 885-1325"
 )
 
@@ -205,6 +289,13 @@ b13 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495412842/SF-Food-Truck-The-Chairman-Food_looptd.jpg",
   lat: 37.784069,
   lng: -122.417594,
+  mon: "11:30 am - 9:00 pm",
+  tue: "11:30 am - 9:00 pm",
+  wed: "11:30 am - 9:00 pm",
+  thu: "11:30 am - 9:00 pm",
+  fri: "11:30 am - 9:00 pm",
+  sat: "11:30 am - 9:00 pm",
+  sun: "11:30 am - 7:00 pm",
   phone_number: "(415) 813-8800"
 )
 
@@ -218,6 +309,13 @@ b14 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495413220/food-dinner-pasta-spaghetti-8500_h4fcnx.jpg",
   lat: 37.799768,
   lng: -122.408316,
+  mon: "11:30 am - 9:30 pm",
+  tue: "11:30 am - 9:30 pm",
+  wed: "11:30 am - 9:30 pm",
+  thu: "11:30 am - 9:30 pm",
+  fri: "11:30 am - 9:30 pm",
+  sat: "11:30 am - 9:30 pm",
+  sun: "Closed",
   phone_number: "(415) 398-3181"
 )
 
@@ -231,6 +329,13 @@ b15 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495412918/348s_mi0ez3.jpg",
   lat: 37.752656,
   lng: -122.418103,
+  mon: "10:00 am - 2:30 am",
+  tue: "10:00 am - 2:30 am",
+  wed: "10:00 am - 2:30 am",
+  thu: "10:00 am - 2:30 am",
+  fri: "10:00 am - 3:30 am",
+  sat: "10:00 am - 3:30 am",
+  sun: "10:00 am - 2:30 am",
   phone_number: "(415) 824-7877"
 )
 
@@ -244,6 +349,13 @@ b16 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495413066/beretta_bce1ph.jpg",
   lat: 37.753815,
   lng: -122.420729,
+  mon: "5:30 pm - 1:00 am",
+  tue: "5:30 pm - 1:00 am",
+  wed: "5:30 pm - 1:00 am",
+  thu: "5:30 pm - 1:00 am",
+  fri: "5:30 pm - 1:00 am",
+  sat: "11:00 am - 1:00 am",
+  sun: "11:00 am - 1:00 am",
   phone_number: "(415) 695-1199"
 )
 
@@ -257,6 +369,13 @@ b17 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495411211/tasty_pot_bldnuc.jpg",
   lat: 37.782578,
   lng: -122.4680006,
+  mon: "11:30 am - 3:00 pm, 5:00 pm - 10:00 pm",
+  tue: "11:30 am - 3:00 pm, 5:00 pm - 10:00 pm",
+  wed: "11:30 am - 3:00 pm, 5:00 pm - 10:00 pm",
+  thu: "11:30 am - 3:00 pm, 5:00 pm - 10:00 pm",
+  fri: "11:30 am - 3:00 pm, 5:00 pm - 10:00 pm",
+  sat: "11:30 am - 11:00 pm",
+  sun: "11:30 am - 10:00 pm",
   phone_number: "(415) 666-3888"
 )
 
@@ -270,6 +389,13 @@ b18 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495411433/pizza_wtndlw.jpg",
   lat: 37.799715,
   lng: -122.408071,
+  mon: "11:30 am - 12:30 am",
+  tue: "11:30 am - 12:30 am",
+  wed: "11:30 am - 12:30 am",
+  thu: "11:30 am - 12:30 am",
+  fri: "11:30 am - 2:30 am",
+  sat: "11:30 am - 2:30 am",
+  sun: "11:30 am - 12:30 am",
   phone_number: "(415) 982-9738"
 )
 
@@ -283,6 +409,13 @@ b19 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495411120/chinese_s4nsjs.jpg",
   lat: 37.780500,
   lng: -122.480722,
+  mon: "11:00 am - 2:30 pm, 5:30 pm - 10:00 pm",
+  tue: "11:00 am - 2:30 pm, 5:30 pm - 10:00 pm",
+  wed: "11:00 am - 2:30 pm, 5:30 pm - 10:00 pm",
+  thu: "11:00 am - 2:30 pm, 5:30 pm - 10:00 pm",
+  fri: "11:00 am - 2:30 pm, 5:30 pm - 10:00 pm",
+  sat: "10:00 am - 3:00 pm, 5:30 pm - 10:00 pm",
+  sun: "11:00 am - 2:30 pm, 5:30 pm - 10:00 pm",
   phone_number: "(415) 333-8899"
 )
 
@@ -296,6 +429,13 @@ b20 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495407314/burgers_myej8b.jpg",
   lat: 37.807730,
   lng: -122.418533,
+  mon: "10:30 am - 1:00 am",
+  tue: "10:30 am - 1:00 am",
+  wed: "10:30 am - 1:00 am",
+  thu: "10:30 am - 1:00 am",
+  fri: "10:30 am - 1:30 am",
+  sat: "10:30 am - 1:30 am",
+  sun: "10:30 am - 1:00 am",
   phone_number: "(800) 786-1000"
 )
 
@@ -309,6 +449,13 @@ b21 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495412524/pexels-photo-410648_zg1ecr.jpg",
   lat: 37.78282831,
   lng: -122.462555,
+  mon: "11:30 am - 3:00 pm, 5:00 pm - 9:30 pm",
+  tue: "11:30 am - 3:00 pm, 5:00 pm - 9:30 pm",
+  wed: "11:30 am - 3:00 pm, 5:00 pm - 9:30 pm",
+  thu: "11:30 am - 3:00 pm, 5:00 pm - 9:30 pm",
+  fri: "11:30 am - 3:00 pm, 5:00 pm - 10:00 pm",
+  sat: "11:30 am - 3:00 pm, 5:00 pm - 10:00 pm",
+  sun: "11:30 am - 3:00 pm, 5:00 pm - 9:30 pm",
   phone_number: "(415) 387-2147"
 )
 
@@ -322,6 +469,13 @@ b22 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495412140/american_jhuq93.jpg",
   lat: 37.793452,
   lng: -122.422543,
+  mon: "5:30 pm - 10:00 pm",
+  tue: "5:30 pm - 10:00 pm",
+  wed: "5:30 pm - 10:00 pm",
+  thu: "5:30 pm - 10:00 pm",
+  fri: "5:00 pm - 10:00 pm",
+  sat: "4:00 pm - 10:00 pm",
+  sun: "4:00 pm - 10:00 pm",
   phone_number: "(415) 885-4605"
 )
 
@@ -335,6 +489,13 @@ b23 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495411352/steak_c9fbxs.jpg",
   lat: 37.779306,
   lng: -122.395699,
+  mon: "5:30 pm - 9:00 pm",
+  tue: "5:30 pm - 9:00 pm",
+  wed: "5:30 pm - 9:00 pm",
+  thu: "5:30 pm - 9:00 pm",
+  fri: "5:30 pm - 10:00 pm",
+  sat: "5:30 pm - 10:00 pm",
+  sun: "5:30 pm - 9:00 pm",
   phone_number: "(415) 495-1111"
 )
 
@@ -348,6 +509,13 @@ b24 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495412460/pexels-photo-48726_idqy2t.jpg",
   lat: 37.786284,
   lng: -122.410506,
+  mon: "10:00 am - 2:00 am",
+  tue: "10:00 am - 2:00 am",
+  wed: "10:00 am - 2:00 am",
+  thu: "10:00 am - 4:00 am",
+  fri: "10:00 am - 4:00 am",
+  sat: "10:00 am - 4:00 am",
+  sun: "10:00 am - 2:00 am",
   phone_number: "(415) 549-3454"
 )
 
@@ -361,6 +529,13 @@ b25 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495412342/pexels-photo-323682_hnovjv.jpg",
   lat: 37.805846,
   lng: -122.420607,
+  mon: "5:30 pm - 10:00 pm",
+  tue: "5:30 pm - 10:00 pm",
+  wed: "5:30 pm - 10:00 pm",
+  thu: "5:30 pm - 10:00 pm",
+  fri: "5:30 pm - 10:00 pm",
+  sat: "5:30 pm - 10:00 pm",
+  sun: "5:30 pm - 10:00 pm",
   phone_number: "(415) 749-2060"
 )
 
@@ -374,6 +549,13 @@ b26 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495412246/noodles_kjwjfp.jpg",
   lat: 37.798470,
   lng: -122.407051,
+  mon: "11:30 am - 3:00 pm, 5:30 pm - 10:00 pm",
+  tue: "11:30 am - 3:00 pm, 5:30 pm - 10:00 pm",
+  wed: "11:30 am - 3:00 pm, 5:30 pm - 10:00 pm",
+  thu: "11:30 am - 3:00 pm, 5:30 pm - 10:00 pm",
+  fri: "11:30 am - 3:00 pm, 5:30 pm - 10:00 pm",
+  sat: "11:30 am - 3:00 pm, 5:30 pm - 10:00 pm",
+  sun: "11:30 am - 3:00 pm, 5:30 pm - 10:00 pm",
   phone_number: "(415) 986-8612"
 )
 
@@ -387,6 +569,13 @@ b27 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495412044/pexels-photo-54296_ogakz8.jpg",
   lat: 37.797030,
   lng:  -122.399956,
+  mon: "11:30 am - 2:30 pm, 5:30 pm - 10:00 pm",
+  tue: "11:30 am - 2:30 pm, 5:30 pm - 10:00 pm",
+  wed: "11:30 am - 2:30 pm, 5:30 pm - 10:00 pm",
+  thu: "11:30 am - 2:30 pm, 5:30 pm - 10:00 pm",
+  fri: "11:30 am - 2:30 pm, 5:30 pm - 10:00 pm",
+  sat: "5:00 pm - 11:00 pm",
+  sun: "5:00 pm - 10:00 pm",
   phone_number: "(415) 981-0983"
 )
 
@@ -400,6 +589,13 @@ b28 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495413276/pexels-photo-106185_drcvph.jpg",
   lat: 37.795570,
   lng: -122.393321,
+  mon: "11:00 am - 9:00 pm",
+  tue: "11:00 am - 9:00 pm",
+  wed: "11:00 am - 9:00 pm",
+  thu: "11:00 am - 9:00 pm",
+  fri: "11:00 am - 9:00 pm",
+  sat: "11:00 am - 9:00 pm",
+  sun: "11:00 am - 9:00 pm",
   phone_number: "(415) 391-7117"
 )
 
@@ -413,6 +609,13 @@ b29 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495410802/san_tung_njkovv.jpg",
   lat: 37.763696,
   lng: -122.469001,
+  mon: "11:00 am - 3:00 pm, 5:00 pm - 9:30 pm",
+  tue: "11:00 am - 3:00 pm, 5:00 pm - 9:30 pm",
+  wed: "Closed",
+  thu: "11:00 am - 3:00 pm, 5:00 pm - 9:30 pm",
+  fri: "11:00 am - 3:00 pm, 5:00 pm - 9:30 pm",
+  sat: "11:00 am - 3:00 pm, 5:00 pm - 9:30 pm",
+  sun: "11:00 am - 3:00 pm, 5:00 pm - 9:30 pm",
   phone_number: "(415) 242-0828"
 )
 
@@ -426,6 +629,13 @@ b30 = Business.create!(
   image_url: "https://res.cloudinary.com/dkdpoayma/image/upload/v1495410976/japanese_lzkdhe.jpg",
   lat: 37.7786599,
   lng: -122.414305,
+  mon: "Closed",
+  tue: "5:00 pm - 11:30 pm",
+  wed: "5:00 pm - 11:30 pm",
+  thu: "5:00 pm - 11:30 pm",
+  fri: "5:00 pm - 11:30 pm",
+  sat: "5:00 pm - 11:30 pm",
+  sun: "5:00 pm - 11:30 pm",
   phone_number: "(415) 800-8345"
 )
 

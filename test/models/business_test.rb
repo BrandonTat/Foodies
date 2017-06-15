@@ -15,6 +15,13 @@
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
 #  phone_number :string           not null
+#  mon          :string
+#  tue          :string
+#  wed          :string
+#  thu          :string
+#  fri          :string
+#  sat          :string
+#  sun          :string
 #
 
 require 'test_helper'

@@ -15,13 +15,15 @@ class ReviewIndex extends React.Component {
       return(
         <div id="reviewIndex">
           <h2 id="reviewHeader">Reviews</h2>
-          {reviews.map(review => (
-            <ReviewIndexItem
-              key={review.id}
-              review={review}
-              {...this.props}
-            />
-          ))}
+          <div id="reviewSide">
+            {reviews.map(review => (
+              <ReviewIndexItem
+                key={review.id}
+                review={review}
+                {...this.props}
+              />
+            ))}
+          </div>
         </div>
       );
     }

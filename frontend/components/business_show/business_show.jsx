@@ -37,7 +37,8 @@ class BusinessShow extends React.Component{
   render() {
     let {
       name, address, city, state,
-      zip, price, phone_number} = this.props.business;
+      zip, price, phone_number, mon,
+      tue, wed, thu, fri, sat, sun} = this.props.business;
     let reviews = this.props.reviews;
 
     if (this.props.business === undefined) {
@@ -66,7 +67,25 @@ class BusinessShow extends React.Component{
 
           <div id="businessShowBottom">
             <ReviewIndexContainer {...this.props}/>
-            <h1 id="businessHours">BusinessHours</h1>
+            <div id="businessHours">
+              <h2 id="hoursHeader">Hours</h2>
+              <ul id="schedule">
+                <li id="week">Monday</li>
+                <li id="day">{mon}</li>
+                <li id="week">Tuesday</li>
+                <li id="day">{tue}</li>
+                <li id="week">Wednesday</li>
+                <li id="day">{wed}</li>
+                <li id="week">Thursday</li>
+                <li id="day">{thu}</li>
+                <li id="week">Friday</li>
+                <li id="day">{fri}</li>
+                <li id="week">Saturday</li>
+                <li id="day">{sat}</li>
+                <li id="week">Sunday</li>
+                <li id="day">{sun}</li>
+              </ul>
+            </div>
           </div>
 
 

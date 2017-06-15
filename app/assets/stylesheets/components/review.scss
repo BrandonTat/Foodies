@@ -11,6 +11,10 @@
   padding: 15px;
 }
 
+#reviewSide {
+  border-right: 1px solid $card_border;
+}
+
 #review {
   display: flex;
   flex-direction: row;
