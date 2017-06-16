@@ -1,4 +1,5 @@
 import React from 'react';
+import Rating from 'react-rating';
 import { Link } from 'react-router-dom';
 
 const PRICES = { 1:"$", 2:"$$", 3:"$$$", 4:"$$$$"};
@@ -19,12 +20,26 @@ class BusinessIndexItem extends React.Component {
   render() {
     const { id, name, price, address, image_url,
           state, city, zip, reviews} = this.props.business;
+    let averageRating = this.props.business.averageRating;
+
     return (
       <div id={id}>
         <ul id="business" onClick= {this.handleBusinessClick}>
-          <li>{name}</li>
-          <li>{address}, {city}, {state}, {zip}</li>
-          <li>{PRICES[price]}</li>
+          <li id="businessName">{name}</li>
+          <li>
+            <text id="featuredRating">
+              Rating:
+              <Rating
+                id="businessShowReviewStars"
+                initialRate={averageRating}
+                empty="fa fa-star-o fa"
+                full="fa fa-star fa"
+                readonly/>
+            </text>
+          </li>
+          <li>{address}</li>
+          <li>{city}, {state}, {zip}</li>
+          <li id="businessMapPrice">{PRICES[price]}</li>
           <img src={image_url}></img>
         </ul>
       </div>

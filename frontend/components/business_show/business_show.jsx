@@ -4,6 +4,7 @@ import HeaderContainer from '../header/header_container';
 import BusinessShowMap from '../business_map/business_show_map';
 import ReviewIndexContainer from '../reviews/review_index_container';
 
+import Rating from 'react-rating';
 import ReviewForm from '../reviews/review_form';
 import Modal from 'react-modal';
 import ModalStyle from '../modal_style';
@@ -35,12 +36,13 @@ class BusinessShow extends React.Component{
   }
 
   render() {
-    console.log(this.props);
+
     let {
       name, address, city, state,
       zip, price, phone_number, mon,
       tue, wed, thu, fri, sat, sun} = this.props.business;
     let reviews = this.props.reviews;
+    let averageRating = this.props.business.averageRating;
 
     if (this.props.business === undefined) {
         return <h1>loading</h1>;
@@ -51,18 +53,24 @@ class BusinessShow extends React.Component{
           <BusinessShowMap business={this.props.business} />
           <div id="businessShowUpper">
             <ul id="businessShowInfo">
-
-              <div id="upperBusinessInfo">
-                <li id="businessShowName">{name}</li>
-                <li id="businessInfo">{address}</li>
-                <li id="businessInfo">{city}, {state}, {zip}</li>
-                <li id="businessInfo">{reviews.length} Reviews || {PRICES[price]}</li>
-                <li id="businessInfo">{phone_number}</li>
-              </div>
-
-              <div id="half">
-                <button id="modal" onClick={this.openModal}>Write a Review</button>
-              </div>
+              <li id="businessShowName">{name}</li>
+              <li id="businessInfo">{address}</li>
+              <li id="businessInfo">{city}, {state}, {zip}</li>
+              <li id="businessInfo" >
+                <text id="featuredRating">
+                  Rating:
+                  <Rating
+                  id="businessShowReviewStars"
+                  initialRate={averageRating}
+                  empty="fa fa-star-o fa"
+                  full="fa fa-star fa"
+                  readonly/>
+                </text>
+                <text id="businessShowReview">{reviews.length} Reviews</text>
+              </li>
+              <li id="businessInfo">{phone_number}</li>
+              <li id="businessInfo" className="businessShowPrice">{PRICES[price]}</li>
+              <button id="modal" onClick={this.openModal}>Write a Review</button>
             </ul>
           </div>
 

@@ -6,7 +6,7 @@
   z-index: 1;
   overflow: scroll;
   background-color: transparent;
-  top: 70px;
+  top: 100px;
   left: 13px;
   border-radius: 5px;
   box-shadow: 10px 5px 10px 0 #888888;
@@ -29,6 +29,14 @@
   box-shadow: 10px 10px 10px 0 #888888;
 }
 
+#businessName {
+  margin: 10px;
+  font-size: 25px;
+  color: $red;
+  font-weight: bold;
+  font-style: $sans;
+}
+
 #business img {
   height: auto;
   width: 90%;
@@ -38,8 +46,7 @@
 
 #business:hover {
   cursor: pointer;
-  transition: all .2s ease-in-out;
-  transform: scale(1.05);
+  opacity: 0.5;
 }
 
 #priceFilter {
@@ -47,10 +54,30 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-text: center;
+  color: white;
+  background-color: $red;
+  border-radius: 2px;
 }
 
 #priceFilter label {
   width: 65px;
   margin: 10px 0;
   font-size: 20px;
+}
+
+#priceTag {
+  font-size: 18px;
+  font-family: $sans;
+  color: white;
+  margin: auto 0;
+}
+
+#priceCheckbox {
+  margin-left: 5px;
+}
+
+#businessMapPrice {
+  padding-top: 5px;
+  color: $green;
 }

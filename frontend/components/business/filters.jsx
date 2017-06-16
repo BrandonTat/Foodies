@@ -23,8 +23,10 @@ class Filters extends React.Component {
   render() {
     return (
       <div id="priceFilter">
-        <label>
+        <text id="priceTag">Price Filter</text>
+        <label id="priceCheckbox">
           $<input
+            id="priceCheckbox"
             onChange={this.handlePrice(1)}
             value={1}
             type="checkbox"
@@ -33,6 +35,7 @@ class Filters extends React.Component {
         </label>
         <label>
           $$<input
+            id="priceCheckbox"
             onChange={this.handlePrice(2)}
             value={2}
             type="checkbox"
@@ -41,6 +44,7 @@ class Filters extends React.Component {
         </label>
         <label>
           $$$<input
+            id="priceCheckbox"
             onChange={this.handlePrice(3)}
             value={3}
             type="checkbox"
@@ -49,6 +53,7 @@ class Filters extends React.Component {
         </label>
         <label>
           $$$$<input
+            id="priceCheckbox"
             onChange={this.handlePrice(4)}
             value={4}
             type="checkbox"
