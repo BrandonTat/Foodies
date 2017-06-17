@@ -23,7 +23,7 @@
   color: white;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 5px;
-  font-family: $lato;
+  font-family: $sans;
 }
 
 #errors {
@@ -67,11 +67,11 @@
 }
 
 #login-form a:hover {
-  color: $wild;
+  color: $red;
 }
 
 #login-form button:hover {
-  color: $wild;
+  color: $red;
   cursor: pointer;
 }
 
