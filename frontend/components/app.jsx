@@ -9,13 +9,13 @@ import HomeContainer from './home/home_container';
 import SearchContainer from './business/search_container';
 import BusinessShowContainer from './business_show/business_show_container';
 
-// import HeaderContainer from './header/header_container';
+import HeaderContainer from './header/header_container';
 
 import { AuthRoute } from '../util/route_util';
 
 const App = () => (
   <div id="main">
-
+    <Route path="/" component={HeaderContainer} />
     <Switch>
       <AuthRoute path="/login" component={SessionFormContainer} />
       <AuthRoute exact path="/" component={SessionFormContainer} />

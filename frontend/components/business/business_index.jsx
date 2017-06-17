@@ -1,7 +1,6 @@
 import React from 'react';
 
 import BusinessIndexItem from './business_index_item';
-import HeaderContainer from '../header/header_container';
 import Loading from '../loading';
 import Filters from './filters';
 
@@ -17,7 +16,6 @@ class BusinessIndex extends React.Component {
     let businesses = Object.values(this.props.businesses);
     return(
       <div id="mapPage">
-        <HeaderContainer {...this.props} />
         <div id="businesses">
           <Filters {...this.props} />
           {businesses.map(business => (
@@ -28,7 +26,6 @@ class BusinessIndex extends React.Component {
               />
           ))}
         </div>
-
       </div>
     );
   }
@@ -36,5 +33,3 @@ class BusinessIndex extends React.Component {
 
 
 export default BusinessIndex;
-
-  // <HeaderContainer {...this.props} />

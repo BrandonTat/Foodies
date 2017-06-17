@@ -1,6 +1,5 @@
 import React from 'react';
 
-import HeaderContainer from '../header/header_container';
 import BusinessShowMap from '../business_map/business_show_map';
 import ReviewIndexContainer from '../reviews/review_index_container';
 
@@ -49,7 +48,6 @@ class BusinessShow extends React.Component{
     } else {
       return (
         <div id="businessShow">
-          <HeaderContainer {...this.props} />
           <BusinessShowMap business={this.props.business} />
           <div id="businessShowUpper">
             <ul id="businessShowInfo">
