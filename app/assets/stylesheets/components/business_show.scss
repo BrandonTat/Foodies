@@ -70,26 +70,39 @@
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid $card_border;
-  height: 250px;
   width: 70%;
-  padding: 0 10px;
+  padding-bottom: 15px;
 }
 
 #businessShowCard {
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
   border: 1px solid $card_border;
   background-color: white;
+  height: 300px;
+}
+
+#lowerCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80%;
+}
+
+#lowerCardAddress {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
 }
 
 #businessCardInfo {
   font-size: 15px;
   font-family: $sans;
+  padding-left: 5px;
 }
 
 #icon {
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
 #iconHidden {
@@ -99,8 +112,7 @@
 
 #businessMap {
   width: 250px;
-  height: 150px;
-  padding: 5px;
+  padding: 6px;
 }
 
 #businessShowBottom {
@@ -113,6 +125,7 @@
 
 .businessShowPrice {
   color: $green;
+  margin-bottom: 10px;
 }
 
 #businessHours {

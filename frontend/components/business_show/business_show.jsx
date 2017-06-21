@@ -73,16 +73,20 @@ class BusinessShow extends React.Component{
               <div id="businessMap">
                 <BusinessShowMap business={this.props.business} />
               </div>
-              <text id="businessCardInfo" >
-                <i id="icon" className="fa fa-map-marker" aria-hidden="true"></i>
-                {address}
-              </text>
-              <text id="businessCardInfo"><i id="iconHidden" className="fa fa-map-marker" aria-hidden="true"></i> {city}, {state}, {zip}</text>
+              <div id="lowerCard">
+                <div id="lowerCardAddress">
+                  <text id="businessCardInfo" >
+                    <i id="icon" className="fa fa-map-marker" aria-hidden="true"></i>
+                    {address}
+                  </text>
+                  <text id="businessCardInfo"><i id="iconHidden" className="fa fa-map-marker" aria-hidden="true"></i> {city}, {state}, {zip}</text>
+                </div>
 
-              <text id="businessCardInfo">
-                <i id="icon" className="fa fa-phone"></i>
-                {phone_number}
-              </text>
+                <text id="businessCardInfo">
+                  <i id="icon" className="fa fa-phone"></i>
+                  {phone_number}
+                </text>
+              </div>
             </div>
           </div>
 
