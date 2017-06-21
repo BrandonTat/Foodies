@@ -12,7 +12,7 @@ class BusinessShowMap extends React.Component {
     let location = {lat, lng};
     const mapOptions = {
       center: location,
-      zoom: 15
+      zoom: 14
     };
 
     this.map = new google.maps.Map(this.refs.mapShow, mapOptions);
@@ -21,31 +21,11 @@ class BusinessShowMap extends React.Component {
       map: this.map,
       animation: google.maps.Animation.DROP
     });
-
-    let business = nextProps.business;
-
-    let content = "<div id='mapWindow'>" +
-      `<h1>${business.name}</h1>` +
-      `<h2>${business.address}, ${business.city}, ${business.state}, ${business.zip}</h2>` +
-      "</div>";
-
-    const window = new google.maps.InfoWindow({
-      content: content,
-      maxWidth: 200
-    });
-
-    marker.addListener('mouseover', () => {
-      window.open(this.map, marker);
-    });
-
-    marker.addListener('mouseout', () => {
-      window.close(this.map, marker);
-    });
   }
 
   render() {
     return(
-      <div id="mapShow-container" ref="mapShow"></div>
+      <div id="mapShow-business" ref="mapShow"></div>
     );
   }
 }

@@ -9,8 +9,15 @@
 #businessShowUpper {
   display: flex;
   flex-direction: row;
-  width: 100vw;
-  border-bottom: 1px solid $card_border;
+  width: 70%;
+}
+
+#businessInfoSection {
+  height: 30%;
+  width: 74%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 #businessShowInfo {
@@ -18,15 +25,12 @@
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  align-items: center;
-  margin: 0 15%;
 }
 
 #businessShowName {
-  font-size: 45px;
+  font-size: 35px;
   font-family: $sans;
   letter-spacing: 1px;
-  color: $red;
   font-weight: bolder;
   padding: 10px 0;
 }
@@ -34,20 +38,15 @@
 #businessInfo {
   font-size: 20px;
   font-family: $sans;
-  padding: 5px;
 }
 
 #businessShowReviewStars {
-  padding-left: 10px;
   color: $red;
 }
 
 #businessShowReview {
+  margin-left: 10px;
   color: $gray;
-}
-
-#businessShowInfo li:last-child {
-  margin-bottom: 15px;
 }
 
 #modal {
@@ -60,10 +59,48 @@
   width: 15%;
   height: 30px;
   text-align: center;
+  margin: auto 0;
 }
 
 #modal:hover {
   opacity: 0.5;
+}
+
+#businessShowMid {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid $card_border;
+  height: 250px;
+  width: 70%;
+  padding: 0 10px;
+}
+
+#businessShowCard {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  border: 1px solid $card_border;
+  background-color: white;
+}
+
+#businessCardInfo {
+  font-size: 15px;
+  font-family: $sans;
+}
+
+#icon {
+  margin-right: 5px;
+}
+
+#iconHidden {
+  margin-right: 5px;
+  color: white;
+}
+
+#businessMap {
+  width: 250px;
+  height: 150px;
+  padding: 5px;
 }
 
 #businessShowBottom {

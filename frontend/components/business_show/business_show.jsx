@@ -48,28 +48,42 @@ class BusinessShow extends React.Component{
     } else {
       return (
         <div id="businessShow">
-          <BusinessShowMap business={this.props.business} />
           <div id="businessShowUpper">
-            <ul id="businessShowInfo">
-              <li id="businessShowName">{name}</li>
-              <li id="businessInfo">{address}</li>
-              <li id="businessInfo">{city}, {state}, {zip}</li>
-              <li id="businessInfo" >
-                <text id="featuredRating">
-                  Rating:
+            <div id="businessInfoSection">
+              <ul id="businessShowInfo">
+                <li id="businessShowName">{name}</li>
+                <li id="businessInfo" >
                   <Rating
                   id="businessShowReviewStars"
                   initialRate={averageRating}
                   empty="fa fa-star-o fa"
                   full="fa fa-star fa"
                   readonly/>
-                </text>
-                <text id="businessShowReview">{reviews.length} Reviews</text>
-              </li>
-              <li id="businessInfo">{phone_number}</li>
-              <li id="businessInfo" className="businessShowPrice">{PRICES[price]}</li>
-              <button id="modal" onClick={this.openModal}>Write a Review</button>
-            </ul>
+                  <text id="businessShowReview">{reviews.length} Reviews</text>
+                </li>
+                <li id="businessInfo" className="businessShowPrice">{PRICES[price]}</li>
+              </ul>
+            </div>
+
+            <button id="modal" onClick={this.openModal}>Write a Review</button>
+          </div>
+
+          <div id="businessShowMid">
+            <div id="businessShowCard">
+              <div id="businessMap">
+                <BusinessShowMap business={this.props.business} />
+              </div>
+              <text id="businessCardInfo" >
+                <i id="icon" className="fa fa-map-marker" aria-hidden="true"></i>
+                {address}
+              </text>
+              <text id="businessCardInfo"><i id="iconHidden" className="fa fa-map-marker" aria-hidden="true"></i> {city}, {state}, {zip}</text>
+
+              <text id="businessCardInfo">
+                <i id="icon" className="fa fa-phone"></i>
+                {phone_number}
+              </text>
+            </div>
           </div>
 
           <div id="businessShowBottom">
@@ -112,3 +126,5 @@ class BusinessShow extends React.Component{
 }
 
 export default BusinessShow;
+
+// <BusinessShowMap business={this.props.business} />
