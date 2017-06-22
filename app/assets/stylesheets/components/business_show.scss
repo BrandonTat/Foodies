@@ -70,7 +70,7 @@
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid $card_border;
-  width: 70%;
+  width: 75%;
   padding-bottom: 15px;
 }
 
@@ -113,6 +113,20 @@
 #businessMap {
   width: 250px;
   padding: 6px;
+}
+
+#businessPhotos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#photoShow {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  margin: 5px;
 }
 
 #businessShowBottom {

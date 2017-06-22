@@ -1,6 +1,7 @@
 import React from 'react';
 
 import BusinessShowMap from '../business_map/business_show_map';
+import PhotoIndexItem from '../photo/photo_index_item';
 import ReviewIndexContainer from '../reviews/review_index_container';
 
 import Rating from 'react-rating';
@@ -39,9 +40,13 @@ class BusinessShow extends React.Component{
     let {
       name, address, city, state,
       zip, price, phone_number, mon,
-      tue, wed, thu, fri, sat, sun} = this.props.business;
+      tue, wed, thu, fri, sat, sun,
+      image_url} = this.props.business;
     let reviews = this.props.reviews;
     let averageRating = this.props.business.averageRating;
+    
+    let photos = [image_url];
+    reviews.slice(-3, -1).map((review) => photos.push(review.photo_url));
 
     if (this.props.business === undefined) {
         return <h1>loading</h1>;
@@ -65,7 +70,7 @@ class BusinessShow extends React.Component{
               </ul>
             </div>
 
-            <button id="modal" onClick={this.openModal}>Write a Review</button>
+            <button id="modal" onClick={this.openModal}>★ Write a Review</button>
           </div>
 
           <div id="businessShowMid">
@@ -87,6 +92,12 @@ class BusinessShow extends React.Component{
                   {phone_number}
                 </text>
               </div>
+            </div>
+
+            <div id="businessPhotos">
+              {photos.map((photo, idx) => (
+                <PhotoIndexItem photo={photo} key={idx} />
+              ))}
             </div>
           </div>
 
