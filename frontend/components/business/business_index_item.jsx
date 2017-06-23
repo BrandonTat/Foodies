@@ -40,7 +40,9 @@ class BusinessIndexItem extends React.Component {
           <li>{address}</li>
           <li>{city}, {state}, {zip}</li>
           <li id="businessMapPrice">{PRICES[price]}</li>
-          <img src={image_url}></img>
+          <li id="businessIndexPhoto">
+            <img id="businessIndexPhoto" src={image_url}></img>
+          </li>
         </ul>
       </div>
     );

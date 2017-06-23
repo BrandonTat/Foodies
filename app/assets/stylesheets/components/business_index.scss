@@ -1,6 +1,8 @@
 #businesses {
   height: 90%;
-  width: 30%;
+  width: 20%;
+  min-width: 300px;
+  // width: 30%;
   position: absolute;
   text-align: center;
   z-index: 1;
@@ -35,6 +37,13 @@
   color: $blue;
   font-weight: bold;
   font-style: $sans;
+}
+
+#businessIndexPhoto {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  margin: 0 auto;
 }
 
 #business img {
