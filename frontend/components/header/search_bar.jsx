@@ -34,9 +34,9 @@ class SearchBar extends React.Component {
             value = {this.state.query}
             placeholder = "Find restaurant name"
             onChange = {this.handleChange}
-            />
-
+          />
         </form>
+
         <button className="searchLink" onClick={this.handleSearch}>
           <i className="fa fa-search"></i>
         </button>

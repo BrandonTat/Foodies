@@ -1,8 +1,8 @@
 # Foodies
 
-[Heroku Live][heroku]
+[Live][live]
 
-[heroku]: https://foodies-yelp-clone.herokuapp.com/#/
+[live]: http://foodieseating.com
 
 Foodies is a full-stack web application inspired by Yelp, utilizing
 Ruby on Rails for the backend, a PostgreSQL database, and a React with Redux
