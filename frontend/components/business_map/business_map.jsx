@@ -9,7 +9,6 @@ const mapOptions = {
 
 class BusinessMap extends React.Component{
   componentDidMount() {
-    // this.props.fetchBusinesses();
     this.renderMarkers();
 
     this.showBusiness = this.showBusiness.bind(this);
