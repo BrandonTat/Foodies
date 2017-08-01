@@ -4,10 +4,10 @@
 
 [live]: http://foodieseating.com
 
-Foodies is a full-stack web application inspired by Yelp, utilizing
+Foodies is a full-stack, single page web application inspired by Yelp, utilizing
 Ruby on Rails for the backend, a PostgreSQL database, and a React with Redux
-architectural framework for the front end. Foodies helps users find
-restaurants located within San Francisco, CA.
+architectural framework for the front end. Foodies helps users locate
+restaurants within San Francisco, CA.
 
 ![home page](readme_photos/home-page.png)
 
