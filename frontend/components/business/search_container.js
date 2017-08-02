@@ -1,10 +1,9 @@
 import { connect } from 'react-redux';
-
 import { fetchBusinesses } from '../../actions/business_actions';
 import Search from './search';
 
-const mapStateToProps = (state) => ({
-  businesses: state.businesses
+const mapStateToProps = ({ businesses }) => ({
+  businesses
 });
 
 const mapDispatchToProps = dispatch => ({

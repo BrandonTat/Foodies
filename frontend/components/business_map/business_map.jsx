@@ -2,11 +2,6 @@ import React from 'react';
 import MarkerManager from '../../util/marker_manager';
 import { values } from 'lodash';
 
-const mapOptions = {
-  center: { lat: 37.7758, lng: -122.457},
-  zoom: 13
-};
-
 class BusinessMap extends React.Component{
   componentDidMount() {
     this.renderMarkers();
@@ -28,6 +23,11 @@ class BusinessMap extends React.Component{
   }
 
   renderMarkers() {
+    const mapOptions = {
+      center: { lat: 37.7758, lng: -122.457},
+      zoom: 13
+    };
+    
     this.map = new google.maps.Map(this.refs.map, mapOptions);
     this.MarkerManager = new MarkerManager(this.map);
     this.MarkerManager.updateMarkers(this.props.businesses);
