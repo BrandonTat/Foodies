@@ -13,17 +13,20 @@ class BusinessIndex extends React.Component {
   }
 
   render() {
-    let businesses = Object.values(this.props.businesses);
+    const {businesses, fetchBusinesses, history} = this.props;
+    let businessesArray = Object.values(businesses);
+    
     return(
       <div id="mapPage">
         <div id="businesses">
-          <Filters {...this.props} />
-          {businesses.map(business => (
+          <Filters fetchBusinesses={fetchBusinesses} />
+
+          {businessesArray.map(business => (
             <BusinessIndexItem
               business={business}
               key={business.id}
-              history = {this.props.history}
-              />
+              history = {history}
+            />
           ))}
         </div>
       </div>

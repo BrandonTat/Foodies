@@ -3,10 +3,16 @@ import React from 'react';
 import BusinessIndex from './business_index';
 import BusinessMap from '../business_map/business_map';
 
-const Search = (props) => (
+const Search = ({ businesses, fetchBusinesses, history }) => (
   <div>
-    <BusinessIndex {...props}/>
-    <BusinessMap {...props}/> 
+    <BusinessIndex
+      businesses={businesses}
+      fetchBusinesses={fetchBusinesses}
+      history={history}
+    />
+    <BusinessMap
+      businesses={businesses}
+    />
   </div>
 );
 
