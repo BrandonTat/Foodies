@@ -61,10 +61,10 @@ class SessionForm extends React.Component {
     }
 
     return(
-      <div id="login">
-        <div id="welcomeHeader">
-          <h1 id="headerLogin">Foodies</h1>
-          <h2 id="description"> - Never get hangry again</h2>
+      <div className="login-page">
+        <div className="welcome-header">
+          <h1 className="website-name">Foodies</h1>
+          <h2 className="motto"> - Never get hangry again</h2>
         </div>
 
         <div id="session-form">
