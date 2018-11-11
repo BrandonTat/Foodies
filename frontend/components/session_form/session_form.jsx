@@ -5,9 +5,10 @@ import ErrorsContainer from '../errors/errors_container';
 class SessionForm extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       username: "",
-      password: "",
+      password: ""
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -49,12 +50,10 @@ class SessionForm extends React.Component {
   }
 
   render() {
-    let header;
-    let submit;
+    let header, submit;
 
     if (this.props.formType === 'login'){
-      header = "Log In";
-      submit = "Log In";
+      header = submit = "Log In";
     } else {
       header = "Become a Foodie";
       submit = "Sign Up";
@@ -64,30 +63,30 @@ class SessionForm extends React.Component {
       <div className="login-page">
         <div className="welcome-header">
           <h1 className="website-name">Foodies</h1>
-          <h2 className="motto"> - Never get hangry again</h2>
+          <h2 className="motto">Never get hangry again</h2>
         </div>
 
-        <div id="session-form">
-          <h1 id="form">{header}</h1>
+        <div className="session-form">
+          <h1>{header}</h1>
 
-          <div id="errors">{<ErrorsContainer />}</div>
+          <div className="login-errors-containter">{<ErrorsContainer />}</div>
+
           <form onSubmit={this.handleSubmit}>
-            <div id="login-form">
-              <label>Username</label>
+            <div className="login-form">
 
               <input type="text"
+                placeholder="Username"
                 value={this.state.username}
                 onChange={this.update('username')}
               />
 
-              <label>Password</label>
-
               <input type="password"
+                placeholder="Password"
                 value={this.state.password}
                 onChange={this.update('password')}
               />
 
-              <div id="buttons">
+              <div className="login-buttons">
                 <button type="submit">{submit}</button>
                 {this.navLink()}
                 <button onClick={this.guestLogIn}>Guest Log In</button>
