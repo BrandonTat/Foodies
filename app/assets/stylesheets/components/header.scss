@@ -1,24 +1,30 @@
-#header {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0;
-
-  width: 100%;
-  font-size: 150%;
-  font-family: $sans;
-  letter-spacing: 2px;
-
-  color: white;
+.header {
   background-color: $red;
-}
+  color: white;
+  display: flex;
+  font-family: verdana;
+  font-size: 150%;
+  justify-content: space-between;
+  padding-bottom: 2px;
+  width: 100%;
 
-#header button {
-  margin-right: 30px;
-  font-size: 1.4em;
-}
+  .headerLinks {
+    a {
+      margin-left: 18px;
+      font-size: 1.5em;
+    }
+  }
 
-#homeLink {
-  margin: auto 0;
+  .logout-link {
+    margin-right: 18px;
+    font-size: 1.5em;
+  }
+
+  .logout-link:hover {
+    border-bottom: 2px solid white;
+    cursor: pointer;
+    color: white;
+  }
 }
 
 #searchForm {
@@ -43,11 +49,6 @@
   font-size: 90%;
   color: black;
   text-align: left;
-}
-
-#headerLinks a {
-  margin-left: 18px;
-  font-size: 1.5em;
 }
 
 .searchLink {
