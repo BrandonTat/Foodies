@@ -26,7 +26,7 @@ class Header extends React.Component {
 
     return (
       <div className="header">
-        <div className="headerLinks">
+        <div className="header-links">
           <Link className="link" to="/home">Foodies</Link>
           <a href="https://github.com/BrandonTat/yelp_clone">
             <i className="fa fa-github link" aria-hidden="true"></i>
