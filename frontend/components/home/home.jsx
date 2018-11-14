@@ -10,17 +10,12 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div id="homepage">
+      <div className="home-page">
 
         <div id="upperHomepage">
           <div id="quote">
-            <h1>
-              "There's no better feeling in the world than a warm pizza box on your lap"
-            </h1>
-
-            <h1>
-              - Kevin James
-            </h1>
+            <h1>"There's no better feeling in the world than a warm pizza box on your lap"</h1>
+            <h1>- Kevin James</h1>
           </div>
 
         </div>
